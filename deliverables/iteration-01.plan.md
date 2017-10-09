@@ -4,10 +4,10 @@
  > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
 
 
-## Iteration XX
+## Iteration 01
 
- * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
- * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
+ * Start date: 6th October 2017
+ * End date: 9th October 2017
 
 ## Process
 
@@ -16,6 +16,17 @@
 #### Roles & responsibilities
 
 Describe the different roles on the team and the responsibilities associated with each role.
+
+Team Lead: The team leader organizes the meetings and goes over the lists of tasks left over or future tasks, and allocates the priority of the tasks.
+
+Front-end Developer(s): The front-end developers are responsible for implementing visual elements that users see and interact with. They work closely with back-end developers so that their code integrates and functions as designed.
+
+Back-end Developer(s): The back-end developers are responsible for server-side logic and integration of the work front-end developers do.
+
+Code Reviewer(s): The code reviewer is responsible for catching any logic/styling errors created by the individual that opened the merge request. 
+
+
+
 
 #### Events
 
