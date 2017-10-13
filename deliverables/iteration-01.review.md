@@ -29,6 +29,8 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
    * This helped us flesh out a strong idea and really start to question what makes a product successful
  * Contacting the TA often
    * Getting regular feedback from the TA allowed us to evaluate our ideas and decide how to change them.
+ * Using Slack with Github integration
+   * Easier to manage tasks
 
 #### Decisions that did not turn out as well as we hoped
 
@@ -83,4 +85,4 @@ Going into the next iteration, our main insights are:
  -------------------------------------
  * In case of disagreement on the project direction, sometimes it's impossible to reach compromise. In this case it's important to make sure that the side whose idea is rejected understands what was the issue with it.
  * Time management is a crucial part of development. It's extremely hard to be productive without good time management. 
- * It's important to get feedback from every member of the group. 
+ * It's important to get feedback from every member of the group and meet regularly. 
