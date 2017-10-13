@@ -69,6 +69,6 @@ List/describe the artifacts you will produce in order to organize your team.
    * This will allow us to make sure our project ideas are actually solving a problem
  * Image of the basic view of the site
    * This will give us a high level idea of what the UI will look like
- *Chat logs / Slack messages
+ * Chat logs / Slack messages
    * These will show how our team communicates 
 
