@@ -71,4 +71,6 @@ List/describe the artifacts you will produce in order to organize your team.
    * This will give us a high level idea of what the UI will look like
  * Chat logs / Slack messages
    * These will show how our team communicates 
+ * Images of our Trello board
+   * This will show what our goals were at the beginning of the week and what we were able to finish by the end of the week
 
