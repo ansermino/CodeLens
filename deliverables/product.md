@@ -25,6 +25,8 @@ This saves our users a huge amount of time. Instead of gluing together bash scri
 
 ### Highlights
 
+- Conversation with Paul Gries, a University of Toronto professors, indicated that there wasn't a sophisticated 21st century solution for code plagiarism. 
+
 - Lots of schools were implementing their own methods of plagiarism checking. University of Toronto's MarkUs project had a blog post about effective methods for plagiarism detection (http://blog.markusproject.org/?p=2570#ideas-of-criteria-for-plagiarism-detection). Other schools have also implemented their propreitary plagiarism checker. All of this wasted effort could be consolidated into one service that is used universally between many different schools.
 
 - Many of the same assignments are used between different schools. CSC458 Assignment 1 is a rebranded Stanford Networking assignment, and CSC384 is a rebranded Berkeley artificial intelligence assignment. Because these schools implement their own method of detecting plagiarism which aren't shared with others, a lot of data is lost. By focusing on one platform we can store the same assignments and use them to gather data in future plagiarism runs.
@@ -36,9 +38,9 @@ This saves our users a huge amount of time. Instead of gluing together bash scri
   - Originally, we wanted to make a booking app for hair salons. We realized that there are many apps that already do this, and that we wouldn't really be bringing anything revolutionary to the table. Not to mention that the app was pretty simple, and we thought that something challenging might be better suited for us.
 
   - Then, we thought that an alternative to online ads would make sense. We explored the idea of mining Monero (a Bitcoin derivative) in a user's browser. Essentially, instead of displaying the user an ad, websites would be running a Javascript file that mines Monero to our Monero wallet (this would be a SaaS project), and we would distribute the Monero to the website owners that use this. However, we decided against this idea because most people are browsing the internet with phones or laptops, which are battery reliant. Mining in the browser would drain the battery very quickly. Also, the amount of money to be made paled in comparison to the amount that ads made, which would deter website owners from using this. The workflow would go as follows:
-   - Website owner registers with us (technically an ad network)
-   - We provide a script to give to the website owner, which they install on their website
-   - Users that visit that website will be mining Monero in the background, into our wallet
-   - We send out payments to the websites, proportional to the amount of Monero that was mined on their website
-  
+     - Website owner registers with us (technically an ad network)
+     - We provide a script to give to the website owner, which they install on their website
+     - Users that visit that website will be mining Monero in the background, into our wallet
+     - We send out payments to the websites, proportional to the amount of Monero that was mined on their website
+
   - The project that we settled on (CodeLens) made the most sense to us because as students we dislike the unfair disadvantages that other students gain by plagiarizing. We've seen how students have plagiarized assignments with minimal effort and have escaped justice. We're looking to put an end to that.
