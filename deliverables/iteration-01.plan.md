@@ -1,4 +1,4 @@
-# YOUR PRODUCT/TEAM NAME
+# CODELENSE/NUMBER ONE
 
  > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
  > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
@@ -7,7 +7,7 @@
 ## Iteration 01
 
  * Start date: 6th October 2017
- * End date: 9th October 2017
+ * End date: 12th October 2017
 
 ## Process
 
@@ -15,26 +15,31 @@
 
 #### Roles & responsibilities
 
-Describe the different roles on the team and the responsibilities associated with each role.
+Team Lead: Daniel Chan
+ * Responsible for organizing meeting
+ * Responsible for delegating tasks to the teams
+ * Responsible for prioritizing tasks
 
-Team Lead: The team leader organizes the meetings and goes over the lists of tasks left over or future tasks, and allocates the priority of the tasks.
+Front End Developers: Daniel Chan, Frank Karunaratna, David Ansermino
+ * Responsible for implementing visual elements that the users will interact with
+ * Will work closely with the back end team to make sure our code will integrate well
 
-Front-end Developer(s): The front-end developers are responsible for implementing visual elements that users see and interact with. They work closely with back-end developers so that their code integrates and functions as designed.
-
-Back-end Developer(s): The back-end developers are responsible for server-side logic and integration of the work front-end developers do.
-
-Code Reviewer(s): The code reviewer is responsible for catching any logic/styling errors created by the individual that opened the merge request. 
-
-
-
+Back End Develpers: Patrick Gronowski, Ivan Topolcic, Ihor Veselovskyy
+ * Responsible for server side logic
+ * Will integrate the work of the front end team
+ * Will develop ways to detect plagiarism
+ 
+Code Reviewer(s): All
+ * We will review eachothers code periodically to make sure our code is up to standard
 
 #### Events
 
 Describe meetings (and other events) you are planning to have:
-
- * When and where? In-person or online?
- * What's the purpose of each meeting?
- * Other events could be coding sessions, code reviews, quick weekly sync' meeting online, etc.
+ * We will have weekly meetings in BA2270 to make sure all team members are up to date on their work.
+ * If a team member cannot make it to the meeting they will be expected to join via Skype or Google Hangouts.
+ * During the meetings each team member will go over what they have done for that week.
+ * We will also be communicating daily through Slack and Facebook if we have questions or concerns about our job.
+ * Our team will also be utilizing a Trello Board to make sure we stay on track.
 
 #### Artifacts
 
