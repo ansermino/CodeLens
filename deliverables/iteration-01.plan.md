@@ -15,21 +15,21 @@
 
 #### Roles & responsibilities
 
-Team Lead: Daniel Chan
+**Team Lead:** Daniel Chan
  * Responsible for organizing meeting
  * Responsible for delegating tasks to the teams
  * Responsible for prioritizing tasks
 
-Front End Developers: Daniel Chan, Frank Karunaratna, David Ansermino
+**Front End Developers:** Daniel Chan, Frank Karunaratna, David Ansermino
  * Responsible for implementing visual elements that the users will interact with
  * Will work closely with the back end team to make sure our code will integrate well
 
-Back End Develpers: Patrick Gronowski, Ivan Topolcic, Ihor Veselovskyy
+**Back End Develpers:** Patrick Gronowski, Ivan Topolcic, Ihor Veselovskyy
  * Responsible for server side logic
  * Will integrate the work of the front end team
  * Will develop ways to detect plagiarism
  
-Code Reviewer(s): All
+**Code Reviewer(s):** All
  * We will review eachothers code periodically to make sure our code is up to standard
 
 #### Events
@@ -56,15 +56,19 @@ List/describe the artifacts you will produce in order to organize your team.
 
 #### Goals and tasks
 
- * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
- * Order the items from most to least important.
- * Feel free (but not obligated) to specify some/all tasks as user stories.
+ * Come up with a final idea for the project
+ *	Assign roles for each team member
+ *	Start planning the execution of our idea
+
 
 #### Artifacts
 
-List/describe the artifacts you will produce in order to present your project idea.
+ * Emails to our TA describing our project ideas
+   * These will help us finalize our project idea and let us know which idea to pursue
+ * Google docs with our project ideas and the problems they solve
+   * This will allow us to make sure our project ideas are actually solving a problem
+ * Image of the basic view of the site
+   * This will give us a high level idea of what the UI will look like
+ *Chat logs / Slack messages
+   * These will show how our team communicates 
 
- * Artifacts can be text, code, images, videos, interactive mock-ups and/or any other useful artifact you can think of.
- * Make sure to explain the purpose of each artifact (i.e. Why is it on your to-do list? Why is it useful for your team?)
- * Be concise, yet precise.         
-   For example: "Build the website" is not precise at all, but "Build a static home page and upload it somewhere, so that it is publicly accessible" is much clearer.
