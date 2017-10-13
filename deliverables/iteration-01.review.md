@@ -1,4 +1,4 @@
-# YOUR PRODUCT/TEAM NAME
+# codeLens
 
  > _Note:_ This document is meant to be written during (or shortly after) your review meeting, which should happen fairly close to the due date.      
  >      
@@ -8,7 +8,7 @@
 ## Iteration XX - Review & Retrospect
 
  * When: FILL IN THE DATE WHEN YOU ACTUALLY HAD YOUR REVIEW MEETING
- * Where: PHYSICAL LOCATION AND/OR ONLINE
+ * Where: Room 2270
 
 ## Process - Reflection
 
@@ -23,6 +23,11 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
  * Ordered from most to least important.
  * Explain why (i.e. give a supporting argument) you consider a decision to be successful.
  * Feel free to refer/link to process artifact(s).
+ 
+ * Using voting to pick an idea
+   * This allowed us to express our interest in pursuing ideas without the risk of groupthink
+ * Constantly pivoting ideas
+   * This helped us flesh out a strong idea and really start to question what makes a product sucessful
 
 #### Decisions that did not turn out as well as we hoped
 
@@ -31,6 +36,11 @@ List process-related (i.e. team organization) decisions that, in retrospect, wer
  * 2 - 4 decisions.
  * Ordered from most to least important.
  * Feel free to refer/link to process artifact(s).
+ 
+ * Using anonymous voting to make decisions
+   * This made it more difficult in the case of tie
+ * Trying to get every member to pitch an idea
+   * While this resulted in an abundance of ideas many were dead in the water and we wasted a fair bit of time deciding which would be feasible.
 
 
 #### Planned changes
