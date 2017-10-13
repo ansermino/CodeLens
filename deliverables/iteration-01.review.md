@@ -22,7 +22,7 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
  * Ordered from most to least important.
  * Explain why (i.e. give a supporting argument) you consider a decision to be successful.
  * Feel free to refer/link to process artifact(s).
- 
+ -------------------------------------
  * Using voting to pick an idea
    * This allowed us to express our interest in pursuing ideas without the risk of groupthink
  * Constantly pivoting ideas
@@ -37,7 +37,7 @@ List process-related (i.e. team organization) decisions that, in retrospect, wer
  * 2 - 4 decisions.
  * Ordered from most to least important.
  * Feel free to refer/link to process artifact(s).
- 
+ -------------------------------------
  * Using anonymous voting to make decisions
    * This made it more difficult in the case of tie
  * Trying to get every member to pitch an idea
@@ -58,9 +58,9 @@ List any process-related changes you are planning to make (if there are any)
 
 #### Goals and/or tasks that were met/completed:
 
- * Decide on the idea
- * Choose the key features or project will have.
- * Decide the role of each group member.
+ * Decided on the idea
+ * Chose the key features or project will have.
+ * Decided the role of each group member.
 
 #### Goals and/or tasks that were planned but not met/completed:
 
@@ -77,6 +77,6 @@ Going into the next iteration, our main insights are:
  * High-level concepts that should guide your work for the next iteration.
  * These concepts should help you decide on where to focus your efforts.
  * Can be related to product and/or process.
- 
+ -------------------------------------
  * We should have regular but shorter meetings, instead of few long meetings. This will help all group members to stay on track, and make sure that we agree on where the whole project is heading.
  * We should lower our expectations. During this iteration, we spent a lot of time on some ideas that were too ambicious for a two-months project. We could improve productivity by doing small steps. 
