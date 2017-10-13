@@ -17,6 +17,8 @@ Our target users would be educational institutions -- specifically professors in
 
 Paul Gries (UofT professor) initially expressed the need for plagiarism detection software in the department of computer science. While they do have a solution currently, it is not intuitive to use and doesn't leverage GitHub and other easily accessible source code hosting software. Our product satisfies the need of our users because it would be an easy one-click solution to plagiarism checking. Instead of getting solutions to assignments and comparing them to student code (which is the currently accepted method via MOSS, a code-based plagiarism detector), instructors would simply upload their skeleton code for relevant files and press 'Run'.
 
+Additionally we will allow users to store multiple iterations of submissions to increase the effectiveness of the plagarism detection. For assignments that don't change from one semester to the next this will allow a larger set on which to perform comparisons and increase the likelyness of detection plagarism. Along with this advantage of storage space we will also provide users with faster detection times. By utilizing specialized cloud services we can perform more efficient detection than running on a local machine.
+
 This saves our users a huge amount of time. Instead of gluing together bash scripts to pipe into Moss and redirect, they have an easy to use interface online which will do all of the above and to a much more accurate degree. Hopefully, this would eventually deter cheating overall and lead to less problems for the instructor.
 
 ----
