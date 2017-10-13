@@ -40,7 +40,8 @@ List any process-related changes you are planning to make (if there are any)
 
  * Ordered from most to least important.
  * Explain why you are making a change.
- 
+ * Mock version of the product: 
+ ![The image did not display correctly](https://i.imgur.com/5W8Iy5T.jpg "Layout")
   -------------------------------------
  * We should have regular but shorter meetings, instead of one long weekly meeting. This will help all group members to stay on track, and make sure that we agree on where the whole project is heading.
  * We should lower our expectations. During this iteration, we spent a lot of time on some ideas that were too ambitious for a two-months project. We could improve productivity by doing small steps. 
