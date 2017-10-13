@@ -35,14 +35,6 @@
 
 
 #### Planned changes
-
-List any process-related changes you are planning to make (if there are any)
-
- * Ordered from most to least important.
- * Explain why you are making a change.
- * Mock version of the product: 
- ![The image did not display correctly](https://i.imgur.com/5W8Iy5T.jpg "Layout")
-  -------------------------------------
  * We should have regular but shorter meetings, instead of one long weekly meeting. This will help all group members to stay on track, and make sure that we agree on where the whole project is heading.
  * We should lower our expectations. During this iteration, we spent a lot of time on some ideas that were too ambitious for a two-months project. We could improve productivity by doing small steps. 
  * In this iteration we often used Google docs over git. We should utilize git more.
@@ -54,6 +46,8 @@ List any process-related changes you are planning to make (if there are any)
 
  * Decided on the idea
  * Chose the key features or project will have.
+ * Mock version of the product: 
+ ![The image did not display correctly](https://i.imgur.com/5W8Iy5T.jpg "Layout")
 
 #### Goals and/or tasks that were planned but not met/completed:
 
@@ -63,12 +57,6 @@ List any process-related changes you are planning to make (if there are any)
 
 Going into the next iteration, our main insights are:
 
- * 2 - 4 items
- * Short (no more than one short paragraph per item)
- * High-level concepts that should guide your work for the next iteration.
- * These concepts should help you decide on where to focus your efforts.
- * Can be related to product and/or process.
- -------------------------------------
  * Time management is a crucial part of development. It's extremely hard to be productive without good time management. 
  * It's important to get feedback from every member of the group and meet regularly. 
  * We found out that there aren't many plagirism detection tools, expect for outdated MOSS.
