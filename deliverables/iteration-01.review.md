@@ -80,3 +80,4 @@ Going into the next iteration, our main insights are:
  -------------------------------------
  * We should have regular but shorter meetings, instead of few long meetings. This will help all group members to stay on track, and make sure that we agree on where the whole project is heading.
  * We should lower our expectations. During this iteration, we spent a lot of time on some ideas that were too ambicious for a two-months project. We could improve productivity by doing small steps. 
+ * It's important to get feedback from every member of the group. 
