@@ -71,7 +71,6 @@ List any process-related changes you are planning to make (if there are any)
 #### Goals and/or tasks that were planned but not met/completed:
 
  * We weren't been able to evaluate the time it would take us to complete back-end and front-end
- * We haven't assigned the exact goals to each group member(i.e, we split a group into back-end and front-end, but not more specific)
  
 ## Meeting Highlights
 
