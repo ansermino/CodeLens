@@ -52,7 +52,11 @@ List any process-related changes you are planning to make (if there are any)
 
  * Ordered from most to least important.
  * Explain why you are making a change.
-
+ 
+  -------------------------------------
+ * We should have regular but shorter meetings, instead of few long meetings. This will help all group members to stay on track, and make sure that we agree on where the whole project is heading.
+ * We should lower our expectations. During this iteration, we spent a lot of time on some ideas that were too ambicious for a two-months project. We could improve productivity by doing small steps. 
+ * In this iteration we often used Google docs over git. We should utilize git more.
 
 ## Product - Review
 
@@ -78,6 +82,6 @@ Going into the next iteration, our main insights are:
  * These concepts should help you decide on where to focus your efforts.
  * Can be related to product and/or process.
  -------------------------------------
- * We should have regular but shorter meetings, instead of few long meetings. This will help all group members to stay on track, and make sure that we agree on where the whole project is heading.
- * We should lower our expectations. During this iteration, we spent a lot of time on some ideas that were too ambicious for a two-months project. We could improve productivity by doing small steps. 
+ * In case of disagreement on the project direction, sometimes it's impossible to reach compromise. In this case it's important to make sure that the side whose idea is rejected understands what was the issue with it.
+ * Time managment is a crucial part of development. It's extremely hard to be productive without good time management. 
  * It's important to get feedback from every member of the group. 
