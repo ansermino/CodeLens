@@ -15,19 +15,22 @@
 
 #### Roles & responsibilities
 
-**Team Lead:** Daniel Chan
+**Team Lead:** Ivan Topolcic
  * Responsible for organizing meeting
  * Responsible for delegating tasks to the teams
  * Responsible for prioritizing tasks
 
-**Front End Developers:** Daniel Chan, Frank Karunaratna, David Ansermino
+**Front End Developers:** Daniel Chan, Frank Karunaratna,
  * Responsible for implementing visual elements that the users will interact with
  * Will work closely with the back end team to make sure our code will integrate well
 
-**Back End Develpers:** Patrick Gronowski, Ivan Topolcic, Ihor Veselovskyy
+**Back End Develpers:** Patrick Gronowski, Ihor Veselovskyy
  * Responsible for server side logic
  * Will integrate the work of the front end team
- * Will develop ways to detect plagiarism
+ 
+**Plagiarism Detection Researcher:** David Ansermino
+ * Responsible for researching and developing methods for detecting plagiarism
+ * Will write the plagiarism detection module / class
  
 **Code Reviewer(s):** All
  * We will review eachothers code periodically to make sure our code is up to standard
