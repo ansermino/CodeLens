@@ -1,50 +1,31 @@
-# YOUR PRODUCT/TEAM NAME
+# CODELENS/NUMBER ONE
 
  > _Note:_ This document is meant to evolve throughout the planning phase of your project.    
  > That is, it makes sense for you commit regularly to this file while working on the project (especially edits/additions/deletions to the _Highlights_ section).
 
 #### Q1: What are you planning to build?
 
-YOUR ANSWER GOES HERE ...
+CodeLens is software that detects plagiarism in code, like TurnItIn for code. We've noticed an influx of assignment plagiarism at the University level. With the recent popularity of GitHub and other public code hosting services, there are more students than ever sharing their code online. Whether it be impress potential recruiters/companies or to simply use version control software, students are making their code available for anyone to see. Since University instructors don't have the time to make their own unique assignments for each semester, they rely on reusing the same assignments throughout many different course offerings. At least within UofT, it's easy to score 100% on an assignment by simply googling "CSCXXX Assignment X" and seeing how a past student solved a problem. CodeLens will be provided as software as a service -- a website that course instructors or the school departments can use to detect plagiarism.
 
- * Short (1 - 2 min' read)
- * Start with a single sentence, high-level description of the product.
- * Be clear - Describe the problem you are solving in simple terms.
- * Be concrete. For example:
-    * What are you planning to build? Is it a website, mobile app,
-   browser extension, command-line app, etc.?      
-    * When describing the problem/need, give concrete examples of common use cases.
- * Focus on *what* your product does, and avoid discussing *how* you're going to implement it.      
-   For example: This is not the time or the place to talk about which programming language and/or framework you are planning to use.
- * **Feel free (and very much encouraged) to include useful diagrams, mock-ups and/or links**.
-
+![The image did not display correctly](https://i.imgur.com/5W8Iy5T.jpg "Layout")
 
 #### Q2: Who are your target users?
 
-YOUR ANSWER GOES HERE ...
-
- * Short (1 - 2 min' read max)
- * Be specific (e.g. )
- * Feel free (but not obligated) to use personas.        
-   You can create your personas as part of this Markdown file, or add a link to an external site (for example, [Xtensio](https://xtensio.com/user-persona/)).
+Our target users would be educational institutions -- specifically professors in the computing department who are teaching courses that historically have had a large number of plagiarized assignments. This means that this software would be used primarily by professors teaching assignment-based introductory computer science courses. While it would make sense to implement this at a University level (eg. have a CodeLens account for the department of computer science at the University of Toronto), we realize that not all professors would want to use this product. Thus, for now, we have decided to implement this at the professor level.
 
 #### Q3: Why would your users choose your product? What are they using today to solve their problem/need?
 
-YOUR ANSWER GOES HERE ...
+Paul Gries (UofT professor) initially expressed the need for plagiarism detection software in the department of computer science. While they do have a solution currently, it is not intuitive to use and doesn't leverage GitHub and other easily accessible source code hosting software. Our product satisfies the need of our users because it would be an easy one-click solution to plagiarism checking. Instead of getting solutions to assignments and comparing them to student code (which is the currently accepted method via MOSS, a code-based plagiarism detector), instructors would simply upload their skeleton code for relevant files and press 'Run'.
 
- * Short (1 - 2 min' read max)
- * We want you to "connect the dots" for us - Why does your product (as described in your answer to Q1) fits the needs of your users (as described in your answer to Q2)?
- * Explain the benefits of your product explicitly & clearly. For example:
-    * Save users time (how much?)
-    * Allow users to discover new information (which information? And, why couldn't they discover it before?)
-    * Provide users with more accurate and/or informative data (what kind of data? Why is it useful to them?)
-
+This saves our users a huge amount of time. Instead of gluing together bash scripts to pipe into Moss and redirect, they have an easy to use interface online which will do all of the above and to a much more accurate degree. Hopefully, this would eventually deter cheating overall and lead to less problems for the instructor.
 
 ----
 
 ### Highlights
 
-YOUR ANSWER GOES HERE ...
+We ran through a lot of different ideas before we settled on this one. 
+
+...
 
 Specify 3 - 5 key decisions and/or insights that came up during your meetings
 and/or collaborative process.
