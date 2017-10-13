@@ -29,8 +29,8 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
    * This helped us flesh out a strong idea and really start to question what makes a product successful
  * Contacting the TA often
    * Getting regular feedback from the TA allowed us to evaluate our ideas and decide how to change them.
- * Using Slack with Github integration
-   * Easier to manage tasks
+ * Using Slack with Github integration and Trello
+   * Easier to manage tasks and commit code
 
 #### Decisions that did not turn out as well as we hoped
 
