@@ -64,14 +64,13 @@ List any process-related changes you are planning to make (if there are any)
 
  * Decided on the idea
  * Chose the key features or project will have.
- * Decided the role of each group member.
+ * Decided the general role of each group member.
 
 #### Goals and/or tasks that were planned but not met/completed:
 
- * For each goal/task, explain why it was not met/completed.      
-   e.g. Did you change your mind, or did y * From most to least important.
-ou just not get to it yet?
-
+ * We weren't been able to evaluate the time it would take us to complete back-end and front-end
+ * We haven't assigned the exact goals to each group member(i.e, we split a group into back-end and front-end, but not more specific)
+ 
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
