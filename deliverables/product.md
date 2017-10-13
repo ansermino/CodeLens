@@ -25,7 +25,7 @@ This saves our users a huge amount of time. Instead of gluing together bash scri
 
 ### Highlights
 
-- Conversation with Paul Gries, a University of Toronto professors, indicated that there wasn't a sophisticated 21st century solution for code plagiarism. 
+- Conversation with Paul Gries, a University of Toronto professors, indicated that there wasn't a sophisticated 21st century solution for code plagiarism (during a summer internship working with him). He suggested various methods for detecting code plagiarism, such as checking Abstract Syntax Trees for similarities.
 
 - Lots of schools were implementing their own methods of plagiarism checking. University of Toronto's MarkUs project had a blog post about effective methods for plagiarism detection (http://blog.markusproject.org/?p=2570#ideas-of-criteria-for-plagiarism-detection). Other schools have also implemented their propreitary plagiarism checker. All of this wasted effort could be consolidated into one service that is used universally between many different schools.
 
