@@ -49,7 +49,7 @@
  * Set up a [Trello Board](https://trello.com/b/h5mS5J5d/csc301-team-01) that we effectively used to complete the deliverables.
  * Viewed product alternatives (MOSS) to see various implementation details and how they could be incorporated into our product.
  * Read the MOSS white paper and understand their methodology at a superficial level: [link](http://theory.stanford.edu/~aiken/publications/papers/sigmod03.pdf)
- * Understand the strengths and weakness of MOSS, identified by this article: [link](https://www3.nd.edu/~kwb/nsf-ufe/1110.pdf)
+ * Understand the strengths and weaknesses of MOSS, identified by this article: [link](https://www3.nd.edu/~kwb/nsf-ufe/1110.pdf)
  * Completed the mock-ups we intended to create: [1](https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/code_view.png?raw=true), [2](https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/high_level.jpg?raw=true), and [3](https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/ui_view.png?raw=true)
 
 #### Goals and/or tasks that were planned but not met/completed:
