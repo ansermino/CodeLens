@@ -46,13 +46,17 @@ Describe meetings (and other events) you are planning to have:
 
 #### Artifacts
 
-List/describe the artifacts you will produce in order to organize your team.       
+To keep track of weekly high-level goals we’ll be using Trello to manage them. To view our board please visit: https://trello.com/b/h5mS5J5d/csc301-team-01. 
 
- * Artifacts can be To-do lists, Task boards, schedule(s), etc.
- * We want to understand:
-   * How do you keep track of what needs to get done?
-   * How do you prioritize tasks?
-   * How do tasks get assigned to team members?
+Due to this being the first iteration, the only items on our agenda are: formulating a product to develop, examining the competition’s strengths and weaknesses as well as identifying any opportunities that we can pursue to make our product viable.
+
+To keep track of specific issues related to the goals, we’ll be using the GitHub Issue Tracker, that way we’re able to assign priorities and team members their appropriate tasks. In order to identify the priority of a task we’ll be using a tagging system, the priority of the tags are as below, in descending order.
+Critical
+Required Component
+Moderate
+Needs Verification
+Low
+
 
 
 ## Product
