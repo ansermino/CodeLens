@@ -65,8 +65,6 @@ To keep track of specific issues related to the goals, we’ll be using the GitH
 
 #### Artifacts
 
- * Emails to our TA describing our project ideas
-   * These will help us finalize our project idea and let us know which idea to pursue
  * Google docs with our project ideas and the problems they solve
    * This will allow us to make sure our project ideas are actually solving a problem
  * Image of the basic view of the site
