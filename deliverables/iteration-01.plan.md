@@ -1,30 +1,26 @@
-# CODELENS/NUMBER ONE
-
- > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
- > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
-
+# CODELENS
 
 ## Iteration 01
 
- * Start date: 6th October 2017
- * End date: 12th October 2017
+ * Start date: October 2nd, 2017 (first tutorial meeting)
+ * End date: October 13th, 2017
 
 ## Process
-During this iteration, the goal is to organize roles and have a final concrete idea for the product. We will discuss about the target audience for the product as well as their requirements, in addition, we’ll be looking at current implementations (if any) and examining their strengths and weaknesses that our product will hopefully address.
+During this iteration, the goal is to come up with a final concrete idea for the product. Besides organizing roles, we will figure out the target audience and the features they will need. We also need to research current solutions (if any) and identify their strengths and weaknesses in order to come up with a viable improvement.
 
-#### Roles & responsibilities
+#### Roles & Responsibilities
 
 **Team Lead:** Ivan Topolcic
- * Responsible for organizing meeting
- * Responsible for delegating tasks to the teams
- * Responsible for prioritizing tasks
+ * Responsible for organizing meetings
+ * Responsible for delegating and prioritizing tasks (with team feedback of course)
 
-**Front End Developers:** Daniel Chan, Frank Karunaratna,
+**Front End Developers:** Daniel Chan, Frank Karunaratna
  * Responsible for implementing visual elements that the users will interact with
  * Will work closely with the back end team to make sure our code will integrate well
 
-**Back End Develpers:** Patrick Gronowski, Ihor Veselovskyy
+**Back End Develpers:** Patrick Gronowski, Ihor Veselovskyy, Ivan Topolcic
  * Responsible for server side logic
+ * Need to implement algorithms to cross-check files 
  * Will integrate the work of the front end team
  
 **Plagiarism Detection Researcher:** David Ansermino
@@ -32,7 +28,7 @@ During this iteration, the goal is to organize roles and have a final concrete i
  * Will write the plagiarism detection module / class
  
 **Code Reviewer(s):** All
- * We will review eachothers code periodically to make sure our code is up to standard
+ * We will review each others code periodically to make sure our code is up to standard
 
 #### Events
 
