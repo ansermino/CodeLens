@@ -40,7 +40,7 @@ Paul Gries (University of Toronto professor) has expressed, to us, the need for 
 
 - We originally wanted to make CodeLens' target school departments instead of professors themselves. We realized that it would be much more difficult to get the support of an entire department v.s. an individual professor. Additionally, not all of the instructors in a department may wish to use CodeLens. This pursuaded us to allow instructors to opt-in instead of forcing professors to use something that they might not want to do.
 
-- We had many alternative ideas before deciding on CodeLens. Here a few we decided not to go with:
+- We had many alternative ideas before deciding on CodeLens. Here are a couple we decided not to go with:
 
   - We wanted to make a booking app for hair salons. We realized that there are many apps that already do this and that we couldn't bring anything new to the table. We also thought that something challenging might be better suited for us.
 
