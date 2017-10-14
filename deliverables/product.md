@@ -1,8 +1,5 @@
 # CODELENS
 
- > _Note:_ This document is meant to evolve throughout the planning phase of your project.    
- > That is, it makes sense for you commit regularly to this file while working on the project (especially edits/additions/deletions to the _Highlights_ section).
-
 #### Q1: What are you planning to build?
 
 CodeLens is software that detects plagiarism in code, like TurnItIn but for code. CodeLens will be provided as software as a service -- a website that course instructors or the school departments can use to detect plagiarism.
