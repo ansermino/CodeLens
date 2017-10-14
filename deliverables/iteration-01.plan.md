@@ -36,41 +36,39 @@ Describe meetings (and other events) you are planning to have:
  * We will have weekly meetings in BA2270 to make sure all team members are up to date on their work.
  * If a team member cannot make it to the meeting they will be expected to join via Skype or Google Hangouts.
  * During the meetings each team member will go over what they have done for that week.
- * We will also be communicating daily through Slack and Facebook if we have questions or concerns about our job.
+ * We will also be communicating daily through Facebook if we have questions or concerns about our job.
  * Our team will also be utilizing a Trello Board to make sure we stay on track.
 
 #### Artifacts
 
-To keep track of weekly high-level goals we’ll be using Trello to manage them. To view our board please visit: [Link](https://trello.com/b/h5mS5J5d/csc301-team-01). 
+To keep track of weekly high-level goals we’ll be using Trello to manage them. To view our board please visit: [link](https://trello.com/b/h5mS5J5d/csc301-team-01)
 
-Due to this being the first iteration, the only items on our agenda are: formulating a product to develop, examining the competition’s strengths and weaknesses as well as identifying any opportunities that we can pursue to make our product viable.
+Due to this being the first iteration, the only items on our agenda are: formulating a product to develop, examining the competition’s strengths and weaknesses, and identifying any opportunities that we can pursue to make our product viable.
+
+We will use Facebook Messenger to facilitate online group discussion.
 
 To keep track of specific issues related to the goals, we’ll be using the GitHub Issue Tracker, that way we’re able to assign priorities and team members their appropriate tasks. In order to identify the priority of a task we’ll be using a tagging system, the priority of the tags are as below, in descending order.
-1. Critical
-2. Required Component
-3. Moderate
-4. Needs Verification
-5. Low
-
-
+1. Critical (in case of bugs like vulnerabilities)
+2. Required Component (important for functionality)
+3. Useful Features (QOL improvements like responsive design)
+4. Features that are nice to have (like aesthestic changes)
 
 ## Product
 
 #### Goals and tasks
 
  * Come up with a final idea for the project
- * Created mockups for the UI
+ * Determine our target audience
+ * Research alternative solutions for our idea
+ * Create mock-ups for the UI
  * Decide which technologies to use
-
 
 #### Artifacts
 
- * Google docs with our project ideas and the problems they solve
-   * This will allow us to make sure our project ideas are actually solving a problem
- * Image of the basic view of the site
+ * Image/mock-up of the basic view of the site
    * This will give us a high level idea of what the UI will look like
- * Chat logs / Slack messages
-   * These will show how our team communicates 
- * Images of our Trello board
-   * This will show what our goals were at the beginning of the week and what we were able to finish by the end of the week
-
+ * Research of competition
+   * Sources that identify the strengths and weaknesses of our competitors
+ * Algorithm Research
+   * Identifying similarities between files will be algorithm intensive
+   * Look into existing algorithms and ideas like Abstract Syntax Trees
