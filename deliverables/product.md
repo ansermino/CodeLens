@@ -8,6 +8,8 @@ We've noticed an influx of assignment plagiarism at the University level. With t
 
 The high-level idea of our MVP is as follows: A website that allows instructors to compare student assignments. We'd like to allow instructors to use different sources of plagiarism: their own sources like past assignments and online code repositories like GitHub and BitBucket. The plagiarism detector would cross-check the current assignments (between each other and the sources) and provide some metric to quantify the level of similarity or plagiarism. The instructor can use this metric to make decisions.
 
+Here are a few mock-ups of our project:
+
 ![The image did not display correctly](https://i.imgur.com/5W8Iy5T.jpg "Layout")
 
 #### Q2: Who are your target users?
