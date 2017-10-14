@@ -53,6 +53,10 @@ List any process-related changes you are planning to make (if there are any)
  * Viewed product alternatives (MOSS) to see various implementation details and how they could be incorporated into our product.
  * Mock version of the product: 
  ![The image did not display correctly](https://i.imgur.com/5W8Iy5T.jpg "Layout")
+ * Completed UI sketch:
+ ![The image did not display correctly](https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/code_view.png?raw=true "Layout")
+  ![The image did not display correctly]( https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/ui_view.png?raw=true "Layout")
+
 
 #### Goals and/or tasks that were planned but not met/completed:
 
