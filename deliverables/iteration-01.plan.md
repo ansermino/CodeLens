@@ -20,7 +20,6 @@ During this iteration, the goal is to come up with a final concrete idea for the
 
 **Back End Develpers:** Patrick Gronowski, Ihor Veselovskyy, Ivan Topolcic
  * Responsible for server side logic
- * Need to implement algorithms to cross-check files 
  * Will integrate the work of the front end team
  
 **Plagiarism Detection Researcher:** David Ansermino
@@ -41,7 +40,7 @@ Describe meetings (and other events) you are planning to have:
 
 #### Artifacts
 
-To keep track of weekly high-level goals we’ll be using Trello to manage them. To view our board please visit: [link](https://trello.com/b/h5mS5J5d/csc301-team-01)
+To keep track of weekly high-level goals we’ll be using Trello to manage them. [Click here](https://trello.com/b/h5mS5J5d/csc301-team-01) to view our board.
 
 Due to this being the first iteration, the only items on our agenda are: formulating a product to develop, examining the competition’s strengths and weaknesses, and identifying any opportunities that we can pursue to make our product viable.
 
@@ -49,26 +48,27 @@ We will use Facebook Messenger to facilitate online group discussion.
 
 To keep track of specific issues related to the goals, we’ll be using the GitHub Issue Tracker, that way we’re able to assign priorities and team members their appropriate tasks. In order to identify the priority of a task we’ll be using a tagging system, the priority of the tags are as below, in descending order.
 1. Critical (in case of bugs like vulnerabilities)
-2. Required Component (important for functionality)
+2. Required Component (important features for functionality)
 3. Useful Features (QOL improvements like responsive design)
 4. Features that are nice to have (like aesthestic changes)
+Tasks will be delegated to the related subteams, or to the people ahead of schedule.
 
 ## Product
 
 #### Goals and tasks
 
  * Come up with a final idea for the project
- * Determine our target audience
+ * Determine our target audience and needed features
  * Research alternative solutions for our idea
  * Create mock-ups for the UI
  * Decide which technologies to use
 
 #### Artifacts
 
- * Image/mock-up of the basic view of the site
-   * This will give us a high level idea of what the UI will look like
+ * Images/mock-ups of the basic view of the site
+   * This will give us a high level idea of what the UI could look like
  * Research of competition
    * Sources that identify the strengths and weaknesses of our competitors
  * Algorithm Research
-   * Identifying similarities between files will be algorithm intensive
+   * Identifying similarities between files will be algorithmically intensive
    * Look into existing algorithms and ideas like Abstract Syntax Trees
