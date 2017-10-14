@@ -63,8 +63,8 @@ To keep track of specific issues related to the goals, we’ll be using the GitH
 #### Goals and tasks
 
  * Come up with a final idea for the project
- *	Assign roles for each team member
- *	Start planning the execution of our idea
+ * Created mockups for the UI
+ * Decide which technologies to use
 
 
 #### Artifacts
