@@ -1,4 +1,4 @@
-# CODELENS
+# CodeLens
 
 #### Q1: What are you planning to build?
 
