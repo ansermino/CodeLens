@@ -51,7 +51,8 @@ To keep track of specific issues related to the goals, we’ll be using the GitH
 2. Required Component (important features for functionality)
 3. Useful Features (QOL improvements like responsive design)
 4. Features that are nice to have (like aesthestic changes)
-Tasks will be delegated to the related subteams, or to the people ahead of schedule.
+
+Tasks will be delegated to the related subteams or to the people ahead of schedule.
 
 ## Product
 
@@ -65,10 +66,12 @@ Tasks will be delegated to the related subteams, or to the people ahead of sched
 
 #### Artifacts
 
- * Images/mock-ups of the basic view of the site
-   * This will give us a high level idea of what the UI could look like
+ * Basic images/mock-ups
+   * This will give us a high level idea of what the UI could look like.
+   * Not extremely important right now, but these mock-ups could give us insights into the features we want to implement.
  * Research of competition
-   * Sources that identify the strengths and weaknesses of our competitors
- * Algorithm Research
-   * Identifying similarities between files will be algorithmically intensive
-   * Look into existing algorithms and ideas like Abstract Syntax Trees
+   * Sources that identify the strengths and weaknesses of our competitors.
+   * This is useful to identify the ways we can make our product viable and meaningful.
+ * Algorithm research
+   * Identifying similarities between files will be algorithmically intensive.
+   * Look into existing algorithms and ideas like Abstract Syntax Trees. Ideally we'd be able to use an algorithm that already exists.
