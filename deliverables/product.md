@@ -12,6 +12,10 @@ Here are a few mock-ups of our project:
 
 ![The image did not display correctly](https://i.imgur.com/5W8Iy5T.jpg "Layout")
 
+ ![The image did not display correctly](https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/code_view.png?raw=true "Layout")
+ 
+  ![The image did not display correctly]( https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/ui_view.png?raw=true "Layout")
+
 #### Q2: Who are your target users?
 
 Our target users would be course instructors who are teaching programming courses and are concerned that students may plagiarize code/assignments. We expect our software to be primarily used by professors teaching assignment-based introductory Computer Science courses (where plagiarism is rampant). We're not closed to the idea of directly targeting institutions or faculties (i.e. the entire Computer Science Faculty at the University of Toronto) but we figure that we should start small. The entire department may not want to use our service, so starting small at the professor-level makes sense. Our software will be most useful for University professors who experience large amounts of plagiarism and have a large source of assignments to check against.
