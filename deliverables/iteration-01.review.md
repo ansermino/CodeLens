@@ -24,7 +24,6 @@
  * Using Slack with Github integration and Trello
    * Trello makes it easier to manage tasks. We switched from Messenger to Slack because it was easier to organize our thoughts and Slack has more built-in features for collaboration.
 
-![The image did not display correctly](https://i.imgur.com/DIGF9Ze.png "Layout")
 #### Decisions that did not turn out as well as we hoped
 
  * Making voting on decisions anonymous
@@ -51,11 +50,12 @@ List any process-related changes you are planning to make (if there are any)
  * Decided on the idea, minimum viable product.
  * Decided workflow for instructors to check plagiarism between students/internet sources.
  * Viewed product alternatives (MOSS) to see various implementation details and how they could be incorporated into our product.
- * Mock version of the product: 
- ![The image did not display correctly](https://i.imgur.com/5W8Iy5T.jpg "Layout")
- * Completed UI sketch:
- ![The image did not display correctly](https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/code_view.png?raw=true "Layout")
-  ![The image did not display correctly]( https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/ui_view.png?raw=true "Layout")
+ * Mock version of the product: https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/code_view.png?raw=true
+ 
+ https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/designs/high_level.jpg?raw=true
+ 
+ * Completed UI sketch: https://github.com/csc301-fall-2017/project-team-01/blob/master/designs/ui_view.png?raw=true
+
 
 
 #### Goals and/or tasks that were planned but not met/completed:
