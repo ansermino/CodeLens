@@ -1,4 +1,4 @@
-# CODELENSE/NUMBER ONE
+# CODELENS/NUMBER ONE
 
  > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
  > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
@@ -10,8 +10,7 @@
  * End date: 12th October 2017
 
 ## Process
-
-(Optional:) Quick introduction
+During this iteration, the goal is to organize roles and have a final concrete idea for the product. We will discuss about the target audience for the product as well as their requirements, in addition, we’ll be looking at current implementations (if any) and examining their strengths and weaknesses that our product will hopefully address.
 
 #### Roles & responsibilities
 
@@ -46,16 +45,16 @@ Describe meetings (and other events) you are planning to have:
 
 #### Artifacts
 
-To keep track of weekly high-level goals we’ll be using Trello to manage them. To view our board please visit: https://trello.com/b/h5mS5J5d/csc301-team-01. 
+To keep track of weekly high-level goals we’ll be using Trello to manage them. To view our board please visit: [Link](https://trello.com/b/h5mS5J5d/csc301-team-01). 
 
 Due to this being the first iteration, the only items on our agenda are: formulating a product to develop, examining the competition’s strengths and weaknesses as well as identifying any opportunities that we can pursue to make our product viable.
 
 To keep track of specific issues related to the goals, we’ll be using the GitHub Issue Tracker, that way we’re able to assign priorities and team members their appropriate tasks. In order to identify the priority of a task we’ll be using a tagging system, the priority of the tags are as below, in descending order.
-Critical
-Required Component
-Moderate
-Needs Verification
-Low
+1. Critical
+2. Required Component
+3. Moderate
+4. Needs Verification
+5. Low
 
 
 
