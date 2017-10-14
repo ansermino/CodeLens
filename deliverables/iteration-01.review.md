@@ -46,6 +46,7 @@
 
  * Decided on the idea, minimum viable product.
  * Decided workflow for instructors to check plagiarism between students/internet sources.
+ * Set up a [Trello Board](https://trello.com/b/h5mS5J5d/csc301-team-01) that we effectively used to complete the deliverables.
  * Viewed product alternatives (MOSS) to see various implementation details and how they could be incorporated into our product.
  * Read the MOSS white paper and understand their methodology at a high level: [link](http://theory.stanford.edu/~aiken/publications/papers/sigmod03.pdf)
  * Understand the strengths and weakness of MOSS, identified by this article: [link](https://www3.nd.edu/~kwb/nsf-ufe/1110.pdf)
