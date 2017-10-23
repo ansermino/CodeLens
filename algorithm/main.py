@@ -12,6 +12,11 @@ def start_algo(file1, file2):
 	tree1 = ast.parse(s1)
 	tree2 = ast.parse(s2)
 
+	tree1 = algo.removeFunctionNames(tree1)
+	tree2 = algo.removeFunctionNames(tree2)
+
+	tree1 = algo.removeArgs(tree1)
+	tree2 = algo.removeArgs(tree2)
 
 	result = algo.basicPlagiarism(tree1, tree2)
 
