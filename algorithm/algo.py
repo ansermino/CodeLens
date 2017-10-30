@@ -1,74 +1,212 @@
 import ast
-
+import modDump
 FUNCTION_NAME = "FUNCTION_NAME_REMOVED"
 
-def basicPlagiarism(ast1, ast2):
-	"""
-	Detects if ast1 and ast2 have the same functions.
-	Dis-regards white space, order of the functions and comments.
 
-	Will only return true if all variables are the same.
-	"""
+class LastCheck(ast.NodeVisitor):
 
-	functions1 = []
-	functions2 = []
+    def __init__(self):
+        self._funcList = []
 
-	for node in ast.walk(ast1):
-		if isinstance(node, ast.FunctionDef):
-			functions1.append(ast.dump(node))
+    def identity(self):
+        return self._funcList
 
-	for node in ast.walk(ast2):
-		if isinstance(node, ast.FunctionDef):
-			functions2.append(ast.dump(node))
-
-	return set(functions1) == set(functions2)
+    def visit_FunctionDef(self, node):
+        print(modDump.dump(node))
+        self._funcList.append(ast.dump(node))
+        self.generic_visit(node)
 
 
-def removeFunctionNames(someAst):
-	"""
-	Removes function names from the given ast.
-	
-	First by replacing the function definitions and then removing any nested
-	calls of one of the functions that were replaced.
-	"""
+class RemoveFuncNames(ast.NodeVisitor):
 
-	functionNames = []
+    def __init__(self, funcs, args):
+        self._funcList = funcs.copy()
+        self._args = args.copy()
 
-	for node in ast.walk(someAst):
-		if isinstance(node, ast.FunctionDef):
-			functionNames.append(node.name)
+    def UniqueFuncList(self):
+        return self._funcList
 
-			node.name = FUNCTION_NAME
+    def UniqueArgList(self):
+        return self._args
 
-	return removeFunctionCalls(someAst, functionNames);
+    def visit_FunctionDef(self, node):
+        self._funcList[node.name] = None
+        node.name = FUNCTION_NAME
+        self.generic_visit(node)
+
+    def visit_Expr(self, node):
+        if node.value.func.id in self._funcList:
+            node.value.func.id = FUNCTION_NAME
+        self.generic_visit(node)
+
+    def visit_arg(self, node):
+        self._args[node.arg] = None
+        node.arg = "NAME_REMOVED"
+        self.generic_visit(node)
+
+    def visit_Name(self, node):
+        if (node.id in self._args) or (node.id in self._funcList):
+            node.id = "NAME_REMOVED"
+        self.generic_visit(node)
+
+    def visit_Assign(self, node):
+
+        for child in ast.iter_child_nodes(node):
+            if isinstance(child, ast.Name):
+                self._args[child.id] = None
+        self.generic_visit(node)
+
+    def visit_Return(self, node):
+        self.generic_visit(node)
+
+    def visit_Call(self, node):
+        self.generic_visit(node)
+
+    def visit_If(self, node):
+        self.generic_visit(node)
+
+    def visit_For(self, node):
+        self._args[node.target.id] = None
+        self.generic_visit(node)
+
+    def visit_While(self, node):
+        self.generic_visit(node)
 
 
-def removeFunctionCalls(someAst, functionList):
-	"""
-	Removes calls to functions in functionList from the ast.
-	"""
+class ComputePlag(ast.NodeVisitor):
 
-	for node in ast.walk(someAst):
+    def __init__(self):
+        self._funcdef = []
+        self._expr = []
+        self._assign = []
+        self._call = []
+        self._if = []
+        self._for = []
+        self._while = []
 
-		if isinstance(node, ast.Expr):
+    def find_count(self):
+        return self._funcdef, self._expr, self._assign, self._call, self._if, self._for, self._while
 
-			if node.value.func.id in functionList:
-				node.value.func.id = FUNCTION_NAME
+    def visit_FunctionDef(self, node):
+        self._funcdef.append(ast.dump(node.args))
+        self.generic_visit(node)
 
-	return someAst
+    def visit_Expr(self, node):
+        self._expr.append(ast.dump(node))
+        self.generic_visit(node)
+
+    def visit_arg(self, node):
+        self.generic_visit(node)
+
+    def visit_Name(self, node):
+        self.generic_visit(node)
+
+    def visit_Assign(self, node):
+        self._assign.append(ast.dump(node))
+        self.generic_visit(node)
+
+    def visit_Return(self, node):
+        self.generic_visit(node)
+
+    def visit_Call(self, node):
+        self._call.append(ast.dump(node))
+        self.generic_visit(node)
+
+    def visit_If(self, node):
+        self._if.append(ast.dump(node.test))
+        self.generic_visit(node)
+
+    def visit_For(self, node):
+        self._for.append(ast.dump(node.target))
+        self.generic_visit(node)
+
+    def visit_While(self, node):
+        self._while.append(ast.dump(node.test))
+        self.generic_visit(node)
+
+class recordNames(ast.NodeVisitor):
+    def __init__(self):
+        self._names = []
+
+    def nameList(self):
+        return self._names
+
+    def visit_FunctionDef(self, node):
+        self._names.append(node.name)
+        self.generic_visit(node)
+
+    def visit_Expr(self, node):
+        self.generic_visit(node)
+
+    def visit_arg(self, node):
+        self._names.append(node.arg)
+        self.generic_visit(node)
+
+    def visit_Name(self, node):
+        self.generic_visit(node)
+
+    def visit_Assign(self, node):
+        for child in ast.iter_child_nodes(node):
+            if isinstance(child, ast.Name):
+                self._names.append(child.id)
+        self.generic_visit(node)
+
+    def visit_Return(self, node):
+        self.generic_visit(node)
+
+    def visit_Call(self, node):
+        self.generic_visit(node)
+
+    def visit_If(self, node):
+        self.generic_visit(node)
+
+    def visit_For(self, node):
+        self._names.append(node.target.id)
+        self.generic_visit(node)
+
+    def visit_While(self, node):
+        self.generic_visit(node)
 
 
-def removeArgs(someAst):
-	argNames = []
+def computeDump(tree):
+    namesAST = recordNames()
+    namesAST.visit(tree)
+    names = namesAST.nameList()
+    layer = RemoveFuncNames({}, {})
+    layer.visit(tree)
+    functionNames1 = layer.UniqueFuncList().copy()
+    arg_names = layer.UniqueArgList().copy()
+    layer = RemoveFuncNames(functionNames1, arg_names)
+    layer.visit(tree)
 
-	for node in ast.walk(someAst):
-		if isinstance(node, ast.arg):
-			argNames.append(node.arg)
-			node.arg = "NAME_REMOVED"
+    check = ComputePlag()
+    check.visit(tree)
+    return check.find_count(), names
 
-	for node in ast.walk(someAst):
-		if isinstance(node, ast.Name):
-			if node.id in argNames:
-				node.id = "NAME_REMOVED"
 
-	return someAst
+def influence(list1, list2, weight):
+    diff = list(set(list1).symmetric_difference(set(list2)))
+    infl = (1 - (float(len(diff)) / (len(list1) + len(list2)))) * weight
+    if(weight == 0.08):
+        print(len(diff))
+        print(((len(list1) + len(list2)) / 2))
+    return infl
+
+
+def finalResult(tree1, tree2):
+    (funcs1, expr1, assign1, call1, if1, for1, while1), names1 = computeDump(tree1)
+    (funcs2, expr2, assign2, call2, if2, for2, while2), names2 = computeDump(tree2)
+
+    score = influence(funcs1, funcs2, 0.15)
+    score += influence(expr1, expr2, 0.3)
+    score += influence(assign1, assign2, 0.27)
+    score += influence(call1, call2, 0.15)
+    score += influence(if1, if2, 0.05)
+    score += influence(names1, names2, 0.08)
+
+
+    #for_diff = list(set(for1) - set(for2))
+    #while_diff = list(set(while1) - set(while2))
+
+    return score
+
