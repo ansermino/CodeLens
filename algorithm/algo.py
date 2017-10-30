@@ -1,74 +1,81 @@
 import ast
-
 FUNCTION_NAME = "FUNCTION_NAME_REMOVED"
 
-def basicPlagiarism(ast1, ast2):
-	"""
-	Detects if ast1 and ast2 have the same functions.
-	Dis-regards white space, order of the functions and comments.
 
-	Will only return true if all variables are the same.
-	"""
+class LastCheck(ast.NodeVisitor):
 
-	functions1 = []
-	functions2 = []
+    def __init__(self):
+        self._funcList = []
 
-	for node in ast.walk(ast1):
-		if isinstance(node, ast.FunctionDef):
-			functions1.append(ast.dump(node))
+    def identity(self):
+        return self._funcList
 
-	for node in ast.walk(ast2):
-		if isinstance(node, ast.FunctionDef):
-			functions2.append(ast.dump(node))
-
-	return set(functions1) == set(functions2)
+    def visit_FunctionDef(self, node):
+        self._funcList.append(ast.dump(node))
+        self.generic_visit(node)
 
 
-def removeFunctionNames(someAst):
-	"""
-	Removes function names from the given ast.
-	
-	First by replacing the function definitions and then removing any nested
-	calls of one of the functions that were replaced.
-	"""
+class RemoveFuncNames(ast.NodeVisitor):
 
-	functionNames = []
+    def __init__(self, funcs, args):
+        self._funcList = funcs.copy()
+        self._args = args.copy()
 
-	for node in ast.walk(someAst):
-		if isinstance(node, ast.FunctionDef):
-			functionNames.append(node.name)
+    def UniqueFuncList(self):
+        return self._funcList
 
-			node.name = FUNCTION_NAME
+    def UniqueArgList(self):
+        return self._args
 
-	return removeFunctionCalls(someAst, functionNames);
+    def visit_FunctionDef(self, node):
+        self._funcList[node.name] = None
+        node.name = FUNCTION_NAME
+        self.generic_visit(node)
+
+    def visit_Expr(self, node):
+        if node.value.func.id in self._funcList:
+            node.value.func.id = FUNCTION_NAME
+        self.generic_visit(node)
+
+    def visit_arg(self, node):
+        self._args[node.arg] = None
+        node.arg = "NAME_REMOVED"
+        self.generic_visit(node)
+
+    def visit_Name(self, node):
+        if (node.id in self._args) or (node.id in self._funcList):
+            node.id = "NAME_REMOVED"
+        self.generic_visit(node)
+
+    def visit_Assign(self, node):
+
+        for child in ast.iter_child_nodes(node):
+            if isinstance(child, ast.Name):
+                self._args[child.id] = None
+        self.generic_visit(node)
+
+    def visit_Return(self, node):
+        self.generic_visit(node)
+
+    def visit_Call(self, node):
+        self.generic_visit(node)
+
+def computeDump(tree):
+    layer = RemoveFuncNames({}, {})
+    layer.visit(tree)
+    functionNames1 = layer.UniqueFuncList().copy()
+    arg_names = layer.UniqueArgList().copy()
+    layer = RemoveFuncNames(functionNames1, arg_names)
+    layer.visit(tree)
+
+    check = LastCheck()
+    check.visit(tree)
+
+    return check.identity()
 
 
-def removeFunctionCalls(someAst, functionList):
-	"""
-	Removes calls to functions in functionList from the ast.
-	"""
+def finalResult(tree1, tree2):
+    firstDump = computeDump(tree1)
+    secondDump = computeDump(tree2)
+    return set(firstDump) == set(secondDump)
 
-	for node in ast.walk(someAst):
-
-		if isinstance(node, ast.Expr):
-
-			if node.value.func.id in functionList:
-				node.value.func.id = FUNCTION_NAME
-
-	return someAst
-
-
-def removeArgs(someAst):
-	argNames = []
-
-	for node in ast.walk(someAst):
-		if isinstance(node, ast.arg):
-			argNames.append(node.arg)
-			node.arg = "NAME_REMOVED"
-
-	for node in ast.walk(someAst):
-		if isinstance(node, ast.Name):
-			if node.id in argNames:
-				node.id = "NAME_REMOVED"
-
-	return someAst

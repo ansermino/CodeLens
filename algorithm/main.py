@@ -1,6 +1,7 @@
 import sys
-import algo
+import classImp
 import ast
+
 
 def start_algo(file1, file2):
 	with open(file1) as f1:
@@ -12,13 +13,7 @@ def start_algo(file1, file2):
 	tree1 = ast.parse(s1)
 	tree2 = ast.parse(s2)
 
-	tree1 = algo.removeFunctionNames(tree1)
-	tree2 = algo.removeFunctionNames(tree2)
-
-	tree1 = algo.removeArgs(tree1)
-	tree2 = algo.removeArgs(tree2)
-
-	result = algo.basicPlagiarism(tree1, tree2)
+	result = classImp.finalResult(tree1, tree2)
 
 	if result:
 		print("PLAGIARISM DETECTED: " + file1 + " and " + file2)
@@ -29,10 +24,9 @@ def start_algo(file1, file2):
 if __name__ == "__main__":
 	
 	if len(sys.argv) != 3:
-		print ('Usage: main.py file1.py file2.py')
+		print('Usage: main.py file1.py file2.py')
 		sys.exit()
 
 	file1 = sys.argv[1]
 	file2 = sys.argv[2]
-
 	start_algo(file1, file2)
