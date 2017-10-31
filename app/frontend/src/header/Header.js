@@ -10,7 +10,8 @@ const rootDivStyle = {
 const leftDivStyle = {
   padding: "15px",
   display: "inline",
-  float: "left"
+  float: "left",
+  textDecoration: "none"
 }
 
 const rightAlignDiv = {
@@ -22,8 +23,10 @@ class Header extends React.Component{
     return(
       <header style={rootDivStyle}>
         <div style={leftDivStyle}>
-          <i style={{display:"inline"}} className="fa fa-2x fa-search"></i>
-          <h2 style={{display:"inline"}}>&lt;CodeLens/&gt;</h2>
+          <a href="/#" style={{textDecoration:"none", color: "white"}}>
+            <i style={{display:"inline", textDecoration: "none"}} className="fa fa-2x fa-search"></i>
+            <h2 style={{display:"inline", textDecoration: "none"}}>&lt;CodeLens/&gt;</h2>
+          </a>
         </div>
         <div style={rightAlignDiv}>
           <FlatButton style={{height: "70px", color: "white"}} label="Login" />
