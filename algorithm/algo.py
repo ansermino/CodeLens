@@ -1,7 +1,7 @@
 import ast
 import modDump
 FUNCTION_NAME = "FUNCTION_NAME_REMOVED"
-
+VAR_NAME = "NAME_REMOVED"
 
 class LastCheck(ast.NodeVisitor):
 
@@ -41,12 +41,12 @@ class RemoveFuncNames(ast.NodeVisitor):
 
     def visit_arg(self, node):
         self._args[node.arg] = None
-        node.arg = "NAME_REMOVED"
+        node.arg = VAR_NAME
         self.generic_visit(node)
 
     def visit_Name(self, node):
         if (node.id in self._args) or (node.id in self._funcList):
-            node.id = "NAME_REMOVED"
+            node.id = VAR_NAME
         self.generic_visit(node)
 
     def visit_Assign(self, node):
@@ -169,12 +169,15 @@ class recordNames(ast.NodeVisitor):
 
 
 def computeDump(tree):
+
     namesAST = recordNames()
     namesAST.visit(tree)
     names = namesAST.nameList()
+
     layer = RemoveFuncNames({}, {})
     layer.visit(tree)
     functionNames1 = layer.UniqueFuncList().copy()
+
     arg_names = layer.UniqueArgList().copy()
     layer = RemoveFuncNames(functionNames1, arg_names)
     layer.visit(tree)
@@ -185,11 +188,11 @@ def computeDump(tree):
 
 
 def influence(list1, list2, weight):
+    if (len(list1) + len(list2)) == 0:
+        return 0
+
     diff = list(set(list1).symmetric_difference(set(list2)))
     infl = (1 - (float(len(diff)) / (len(list1) + len(list2)))) * weight
-    if(weight == 0.08):
-        print(len(diff))
-        print(((len(list1) + len(list2)) / 2))
     return infl
 
 
@@ -197,16 +200,15 @@ def finalResult(tree1, tree2):
     (funcs1, expr1, assign1, call1, if1, for1, while1), names1 = computeDump(tree1)
     (funcs2, expr2, assign2, call2, if2, for2, while2), names2 = computeDump(tree2)
 
-    score = influence(funcs1, funcs2, 0.15)
-    score += influence(expr1, expr2, 0.3)
+    score = influence(funcs1, funcs2, 0.12)
+    score += influence(expr1, expr2, 0.27)
     score += influence(assign1, assign2, 0.27)
     score += influence(call1, call2, 0.15)
     score += influence(if1, if2, 0.05)
+    score += influence(for1, for2, 0.03)
+    score += influence(while1, while2, 0.03)
     score += influence(names1, names2, 0.08)
 
-
-    #for_diff = list(set(for1) - set(for2))
-    #while_diff = list(set(while1) - set(while2))
 
     return score
 
