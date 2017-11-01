@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Switch, Route} from 'react-router'
 import './App.css';
 import {Home} from './home'
 import {Header} from './header'
@@ -11,7 +11,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <DiffView />
+          <Switch>
+            <Route exact path="/diff" component={DiffView}/>
+            <Route path="/user" component={UserLanding}/>
+            <Route exact path="/" component={Home}/>
+          </Switch>
       </div>
     );
   }
