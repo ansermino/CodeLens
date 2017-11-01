@@ -35,8 +35,10 @@ class RemoveFuncNames(ast.NodeVisitor):
         self.generic_visit(node)
 
     def visit_Expr(self, node):
-        if node.value.func.id in self._funcList:
-            node.value.func.id = FUNCTION_NAME
+        if not isinstance(node.value, ast.Str):
+            if not isinstance(node.value.func, ast.Attribute):
+                if node.value.func.id in self._funcList:
+                    node.value.func.id = FUNCTION_NAME
         self.generic_visit(node)
 
     def visit_arg(self, node):
@@ -66,7 +68,13 @@ class RemoveFuncNames(ast.NodeVisitor):
         self.generic_visit(node)
 
     def visit_For(self, node):
-        self._args[node.target.id] = None
+        if isinstance(node.target, ast.Tuple):
+            for child in ast.iter_child_nodes(node.target):
+                if isinstance(child, ast.Name):
+                    self._args[child.id] = None
+        if isinstance(node.target, ast.Name):
+            self._args[node.target.id] = None
+
         self.generic_visit(node)
 
     def visit_While(self, node):
@@ -161,7 +169,13 @@ class recordNames(ast.NodeVisitor):
         self.generic_visit(node)
 
     def visit_For(self, node):
-        self._names.append(node.target.id)
+        if isinstance(node.target, ast.Tuple):
+            for child in ast.iter_child_nodes(node.target):
+                if isinstance(child, ast.Name):
+                    self._names.append(child.id)
+        if isinstance(node.target, ast.Name):
+            self._names.append(node.target.id)
+
         self.generic_visit(node)
 
     def visit_While(self, node):
