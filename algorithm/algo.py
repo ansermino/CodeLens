@@ -214,15 +214,14 @@ def finalResult(tree1, tree2):
     (funcs1, expr1, assign1, call1, if1, for1, while1), names1 = computeDump(tree1)
     (funcs2, expr2, assign2, call2, if2, for2, while2), names2 = computeDump(tree2)
 
-    score = influence(funcs1, funcs2, 0.12)
-    score += influence(expr1, expr2, 0.27)
-    score += influence(assign1, assign2, 0.27)
-    score += influence(call1, call2, 0.15)
+    score = influence(funcs1, funcs2, 0.03)
+    score += influence(expr1, expr2, 0.31)
+    score += influence(assign1, assign2, 0.29)
+    score += influence(call1, call2, 0.18)
     score += influence(if1, if2, 0.05)
     score += influence(for1, for2, 0.03)
     score += influence(while1, while2, 0.03)
     score += influence(names1, names2, 0.08)
-
 
     return score
 
