@@ -9,9 +9,6 @@ models.sequelize.sync().then(() => {
   console.log(err, "Something went wrong connecting to the database!");
 });
 
-
-
-
 app.get('/', function (req, res) {
   res.send('Hello World!')
 });
