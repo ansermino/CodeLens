@@ -9,13 +9,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       title: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        notEmpty: false,
+        allowNull: false
       },
       plagiarism_threshold: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        defaultValue: 50
       },
       folder_hash: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
+        notEmpty: false
       },
       createdAt: {
         allowNull: false,
