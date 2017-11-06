@@ -9,13 +9,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       plagiarism_score: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        defaultValue: 0
       },
       student_id: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
+        notEmpty: false,
       },
       file_hash: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
+        notEmpty: false
       },
       createdAt: {
         allowNull: false,
