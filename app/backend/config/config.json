@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "csc301",
+    "password": "team01",
+    "database": "plagiarism",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "csc301",
+    "password": "team01",
+    "database": "plagiarism",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "csc301",
+    "password": "team01",
+    "database": "plagiarism",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  }
+}
