@@ -5,8 +5,8 @@ const models = require('./models');
 const authentication = require('./routes/api_authentication');
 const assignments = require('./routes/api_assignments');
 
-app.use(authentication);
-app.use(assignments);
+app.use('/api/auth', authentication);
+app.use('/api/assignments', assignments);
 
 app.listen(port, function () {
   console.log('Example app listening on port %d!', port)
@@ -22,4 +22,3 @@ models.sequelize.sync().then(() => {
 app.get('/', function (req, res) {
   res.send('Hello World!')
 });
-
