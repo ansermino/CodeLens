@@ -8,7 +8,6 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const passport = require('passport');
 
-
 // Specifically for test. Should have a check for environment variables, dev or prod.
 const testViews = require('./routes/api_test');
 
@@ -34,7 +33,7 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.use(authentication);
-app.use(assignments);
+app.use('/api/assignments', assignments);
 app.use(testViews);
 
 models.sequelize.sync().then(() => {
@@ -49,4 +48,3 @@ models.sequelize.sync().then(() => {
 app.get('/', function (req, res) {
   res.send('Hello World!')
 });
-
