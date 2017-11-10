@@ -13,7 +13,7 @@ class App extends Component {
         <Header />
           <Switch>
             <Route exact path="/diff" component={DiffView}/>
-            <Route path="/user" component={UserLanding}/>
+            <Route exact path="/user" component={UserLanding}/>
             <Route exact path="/" component={Home}/>
           </Switch>
       </div>
