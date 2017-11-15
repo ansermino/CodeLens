@@ -1,5 +1,6 @@
 import React from 'react'
 import {FlatButton} from 'material-ui'
+import { Link } from 'react-router-dom'
 
 const rootDivStyle = {
   backgroundColor: "grey",
@@ -29,7 +30,7 @@ class Header extends React.Component{
           </a>
         </div>
         <div style={rightAlignDiv}>
-          <FlatButton style={{height: "70px", color: "white"}} label="Login" />
+          <Link to="/login"><FlatButton style={{height: "70px", color: "white"}} label="Login" /></Link>
         </div>
       </header>
     )
