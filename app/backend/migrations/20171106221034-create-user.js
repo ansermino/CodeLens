@@ -16,10 +16,6 @@ module.exports = {
         type: Sequelize.STRING,
         notEmpty: true
       },
-      username: {
-        type: Sequelize.STRING,
-        notEmpty: true
-      },
       email: {
         type: Sequelize.STRING,
         validate: {
