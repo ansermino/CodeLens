@@ -8,6 +8,7 @@ import {DiffView} from './views/diffView'
 import {CreateAssignment} from './views/createAssignment'
 import { Login } from './views/login'
 import { AssignmentSummary } from './views/AssignmentSummary'
+import { Footer } from './footer'
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
 
             <Route exact path="/" component={Home}/>
           </Switch>
+          <Footer />
       </div>
     );
   }
