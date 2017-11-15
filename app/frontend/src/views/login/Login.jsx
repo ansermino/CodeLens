@@ -9,10 +9,18 @@ const style = {
   },
   paper: {
     display: "grid",
-    gridTemplateRows: "2fr 1fr 1fr 2fr"
+    gridTemplateRows: "2fr 2fr 2fr"
   },
   header: {
     padding: "2rem"
+  },
+  fieldStyle: {
+    width: "50%",
+    margin: "auto",
+    padding: "1rem",
+    display: "grid",
+    gridTemplateRows: "1fr 1fr",
+    border: "0.25rem solid grey"
   },
   loginButton: {
     float: "right",
@@ -37,13 +45,15 @@ class Login extends React.Component{
             <div>
               <h2 style={style.header}>Login</h2>
             </div>
-            <div style={style.field}>
-              <h3 style={style.label}>User:</h3>
-              <TextField label='User'/>
-            </div>
-            <div style={style.field}>
-              <h3 style={style.label}>Password:</h3>
-              <TextField />
+            <div style={style.fieldStyle}>
+              <div style={style.field}>
+                <h3 style={style.label}>User:</h3>
+                <TextField label='User'/>
+              </div>
+              <div style={style.field}>
+                <h3 style={style.label}>Password:</h3>
+                <TextField />
+              </div>
             </div>
             <div>
               <Link to="/user-landing"><RaisedButton  style={style.loginButton} label="Login" /></Link>

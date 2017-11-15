@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatButton, Paper, RaisedButton } from 'material-ui'
+import { Paper, RaisedButton } from 'material-ui'
 import { Link } from 'react-router-dom'
 
 const style = {
