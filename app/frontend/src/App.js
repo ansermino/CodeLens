@@ -7,6 +7,7 @@ import {UserLanding} from './views/userLanding'
 import {DiffView} from './views/diffView'
 import {CreateAssignment} from './views/createAssignment'
 import { Login } from './views/login'
+import { AssignmentSummary } from './views/AssignmentSummary'
 
 class App extends Component {
   render() {
@@ -18,6 +19,9 @@ class App extends Component {
             <Route path="/create" component={CreateAssignment}/>
             <Route exact path="/diff" component={DiffView}/>
             <Route exact path="/user-landing" component={UserLanding}/>
+            {/* TODO: Remove these, purely for easy testing */}
+            <Route exact path="/assignment" component={AssignmentSummary} />
+
             <Route exact path="/" component={Home}/>
           </Switch>
       </div>
