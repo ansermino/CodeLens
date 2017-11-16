@@ -46,7 +46,7 @@ class Home extends React.Component{
         <div></div>
         <div style={style.content}>
           <h1 style={style.icon}><i style={{display:"inline", textDecoration: "none"}} className="fa fa-2x fa-search"></i></h1>
-          <h1 style={style.title}>&lt;CodeLens/&gt;</h1>
+          <h1 style={style.title}>&lt;<span style={{color:"#f009"}}>CodeLens</span>/&gt;</h1>
           <h2 style={style.tagline}>Some tagline goes here.</h2>
           <div style={style.details}>
             <div style={style.detail}>

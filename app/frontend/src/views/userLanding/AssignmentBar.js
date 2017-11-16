@@ -3,26 +3,30 @@ import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import FlatButton from 'material-ui/FlatButton';
+import { Link } from 'react-router-dom'
 
-const styles = {
+const style = {
   title: {
     cursor: 'pointer',
   },
-};
-
-const barStyle = {
-  backgroundColor: "grey"
+  barStyle: {
+    backgroundColor: "grey"
+  },
+  viewButton: {
+    color: "white"
+  }
 }
+
 
 class AssignmentBar extends React.Component{
   render(){
     return (
       <AppBar
-        title={<span style={styles.title}>Title</span>}
+        title={<span style={style.title}>{this.props.title}</span>}
         onTitleTouchTap={null}
         iconElementLeft={<IconButton><NavigationClose /></IconButton>}
-        iconElementRight={<FlatButton label="View" />}
-        style={barStyle}
+        iconElementRight={<Link to="/assignment"><FlatButton style={style.viewButton} label="View" /></Link>}
+        style={style.barStyle}
       />
     )
   }

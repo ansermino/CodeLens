@@ -6,15 +6,30 @@ import {
   TableHeaderColumn,
   TableRow,
   TableRowColumn,
-  RaisedButton
+  FlatButton
 } from 'material-ui'
+import { Link } from 'react-router-dom'
+
+const style = {
+  table: {
+    textAlign: "center"
+  }
+}
+
+const samepleData = [
+  {studentA: "1000887374", studentB: "1000849375", similarity: "86%"},
+  {studentA: "1000894857", studentB: "1000948573", similarity: "75%"},
+  {studentA: "1000394584", studentB: "1000385947", similarity: "52%"},
+  {studentA: "1000948637", studentB: "1000948573", similarity: "31%"},
+  {studentA: "1000859473", studentB: "1000958685", similarity: "30%"}
+]
 
 class TopSubmissionTable extends React.Component{
   render(){
     return(
-      <Table selectable={false}>
+      <Table selectable={false} bodyStyle={style.table}>
         <TableHeader displaySelectAll={false}>
-          <TableRow>
+          <TableRow >
             <TableHeaderColumn>Student A</TableHeaderColumn>
             <TableHeaderColumn>Student B</TableHeaderColumn>
             <TableHeaderColumn>Similarity</TableHeaderColumn>
@@ -22,30 +37,16 @@ class TopSubmissionTable extends React.Component{
           </TableRow>
         </TableHeader>
         <TableBody displayRowCheckbox={false}>
-          <TableRow>
-            <TableRowColumn>1000889247</TableRowColumn>
-            <TableRowColumn>1000934867</TableRowColumn>
-            <TableRowColumn>87%</TableRowColumn>
-            <TableRowColumn><RaisedButton label="View" /></TableRowColumn>
-          </TableRow>
-          <TableRow>
-            <TableRowColumn>1000234247</TableRowColumn>
-            <TableRowColumn>100334867</TableRowColumn>
-            <TableRowColumn>64% </TableRowColumn>
-            <TableRowColumn><RaisedButton label="View" /></TableRowColumn>
-          </TableRow>
-          <TableRow>
-            <TableRowColumn>1000878247</TableRowColumn>
-            <TableRowColumn>1004934867</TableRowColumn>
-            <TableRowColumn>51% </TableRowColumn>
-            <TableRowColumn><RaisedButton label="View" /></TableRowColumn>
-          </TableRow>
-          <TableRow>
-            <TableRowColumn>1000845247</TableRowColumn>
-            <TableRowColumn>1000434866</TableRowColumn>
-            <TableRowColumn>32%</TableRowColumn>
-            <TableRowColumn><RaisedButton label="View" /></TableRowColumn>
-          </TableRow>
+          {samepleData.map((item, n) => {
+            return(
+              <TableRow style={style.table}>
+                <TableRowColumn style={style.table}>{item.studentA}</TableRowColumn>
+                <TableRowColumn style={style.table}>{item.studentB}</TableRowColumn>
+                <TableRowColumn style={style.table}>{item.similarity}</TableRowColumn>
+                <TableRowColumn><Link to="/diff" ><FlatButton label="View" /></Link></TableRowColumn>
+              </TableRow>
+            )
+          })}
         </TableBody>
       </Table>
     )
