@@ -5,10 +5,9 @@ import { Link } from 'react-router-dom'
 const style = {
   paper:{
     width: "100%",
-    height: "480px",
     display: "grid",
-    gridTemplateRows: "1fr 1fr 1fr",
-    marginTop: "5rem"
+    gridTemplateRows: "1fr 0.75fr",
+    marginTop: "1rem"
   },
   title: {
     paddingLeft: "3rem"
@@ -16,6 +15,7 @@ const style = {
   uploadDiv: {
     marginLeft: "auto",
     marginRight: "auto",
+    marginTop: "3rem",
     display: "block",
     width: "80%"
   },
@@ -38,16 +38,14 @@ class SubmissionCodeForm extends React.Component{
   render(){
     return(
       <div>
+        <h2 style={style.title}>Create Assignment</h2>
         <Paper style={style.paper}>
-          <div>
-            <h2 style={style.title}>Create Assignment</h2>
-          </div>
           <div style={style.uploadDiv}>
-            <h3>Upload Student Submissions...</h3>
+            <p>Upload Student Submissions...</p>
             <input type="file" />
           </div>
           <div>
-            <Link style={style.nextButton} to="/create/data"><RaisedButton label="next"/></Link>
+            <Link style={style.nextButton} to="/assignment"><RaisedButton label="next"/></Link>
           </div>
 
         </Paper>

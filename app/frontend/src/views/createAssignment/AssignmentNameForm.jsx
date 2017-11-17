@@ -5,23 +5,25 @@ import { Link } from 'react-router-dom'
 const style = {
   paper:{
     width: "100%",
-    height: "480px",
     display: "grid",
-    gridTemplateRows: "1fr 1fr 1fr",
-    marginTop: "5rem"
+    gridTemplateRows: "1fr 1fr",
+    marginTop: "1rem"
   },
   title: {
-    paddingLeft: "3rem"
+    paddingLeft: "3rem",
+    paddingBottom: "0px"
   },
   textField: {
     marginLeft: "auto",
     marginRight: "auto",
+    marginTop: "5rem",
     display: "block",
     width: "80%"
   },
   nextButton: {
     float: "right",
-    paddingRight: "5rem"
+    paddingRight: "5rem",
+    marginTop: "2rem"
   }
 }
 
@@ -38,10 +40,8 @@ class AssignmentNameForm extends React.Component{
   render(){
     return(
       <div>
+        <h2 style={style.title}>Create Assignment</h2>
         <Paper style={style.paper}>
-          <div>
-            <h2 style={style.title}>Create Assignment</h2>
-          </div>
           <div>
             <TextField style={style.textField} hintText="Assignment Name" name="name" value={this.state.value} onChange={this.handleChange} />
           </div>

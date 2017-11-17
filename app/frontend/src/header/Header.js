@@ -70,7 +70,7 @@ class Header extends React.Component{
             <h3 style={style.label}>User:</h3>
             <TextField label='User'/>
             <h3 style={style.label}>Password:</h3>
-            <TextField />
+            <TextField type="password"/>
           </div>
         </Dialog>
         <header style={style.rootDivStyle}>

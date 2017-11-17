@@ -12,7 +12,7 @@ class Footer extends React.Component{
   render() {
     return(
       <footer style={style.rootDiv}>
-        <p>Copyright CodeLens 2017</p>
+        <p>&#169; Copyright CodeLens 2017</p>
       </footer>
     )
   }

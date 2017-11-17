@@ -34,8 +34,8 @@ const style = {
   detail: {
     backgroundColor: "grey",
     border: "0.25rem solid white",
-    padding: "0.5rem",
-    textAlign: "center"
+    padding: "0.75rem",
+    textAlign: "left"
   }
 }
 
@@ -50,15 +50,15 @@ class Home extends React.Component{
           <h2 style={style.tagline}>Because honesty is the best policy.</h2>
           <div style={style.details}>
             <div style={style.detail}>
-              <h3>Fully automated</h3>
+              <h3 style={{textAlign: "center"}}>Fully automated</h3>
               <p>Just upload your starter code and student submissions and we take care of the rest. Plagarism detection has never been easier!</p>
             </div>
             <div style={style.detail}>
-              <h3>Deep Analysis</h3>
+              <h3 style={{textAlign: "center"}}>Deep Analysis</h3>
               <p>Using a variety of methodologies our algorithms look deep beneath the surface for indications of plagarism. From analysis of program structure to variable name comparison and class structure comparison we conduct extensive testing to produce results.</p>
             </div>
             <div style={style.detail}>
-              <h3>Long-term storage</h3>
+              <h3 style={{textAlign: "center"}}>Long-term storage</h3>
               <p>Store your code with us for as long as you need. You can choose to compare different course iterations of the same assignment to ensure students don't plagarise from students who have prevously taken the course.</p>
             </div>
           </div>
