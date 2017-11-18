@@ -70,7 +70,10 @@ Created basic website layout and background
 ![All Assignments](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/web_assignmentsview.png?token=AORB-wkfSOyHg1c4i3Wvmw6moxba-W7Rks5aGM6cwA%3D%3D)
 
 
-* Created an algorithm to detect plagiarism, which returns similarity percentage. Artifacts:
+* Created an algorithm to detect plagiarism, which returns similarity percentage. 
+![Similarity](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/web_submissionsview.png?token=AORB-1o1entYfzvMFkeKPzXIISa4j8lnks5aGNAKwA%3D%3D)
+
+Artifacts:
 
 Python AST API: 
     https://greentreesnakes.readthedocs.io/en/latest/
