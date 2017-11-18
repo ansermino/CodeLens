@@ -26,7 +26,6 @@ The responsibility of the developers in this group is to build an algorithm that
 
 
 
-
 #### Events
 
 Describe meetings (and other events) you are planning to have:
@@ -41,7 +40,7 @@ In this specific meeting, our main focus will be identifying what needs to be do
 16th November in Bahen 2270
 In this specific meeting, the main focus will be to review the material that we’ve created thus far for the deliverable and make changes where necessary, this includes the review of the script for the video and the video itself.
 17th November in Bahen 2270
-    Final touches on iteration documents and video.
+	Final touches on iteration documents and video.
 
 In addition to weekly meetings, members of our group will open merge requests on GitHub and request a review from another member from their team. Ideally the merge request will get reviewed in 48 hours, and feedback will be left on the merge request. The code reviews will happen solely on Github unless there have been serious misunderstandings, in which case we will address them in person.
 
@@ -49,7 +48,6 @@ On top of code reviews, we intend on scheduling pair programming sessions. These
 
 
 #### Artifacts
-
 
 We’ll be making the following artifacts to aid in the creation of our product for this iteration.
 Task Boards
@@ -75,9 +73,7 @@ List/describe the artifacts you will produce in order to organize your team.
    * How do you prioritize tasks?
    * How do tasks get assigned to team members?
 
-
 #### Git / GitHub workflow
-
 
 Our GitHub workflow is simple, and follows a workflow that was used during my summer internship. That is, we create a specific issue on the GitHub issues tracker for each task that the individual has been assigned, and mark the task on Freedcamp as in-progress.
 
@@ -104,37 +100,35 @@ For example, "we use pull-requests" is not a precise statement since it leaves t
 
 
 
-
 ## Product
 
 #### Goals and tasks
 
-
 Our goal for this iteration is to build a minimal viable product, so that our users can easily upload their student’s submissions and check for any signs of plagiarism. We have several components that are used to build the minimal viable product, the front-end web interface component and the back-end component.
 
 For the front-end we have the following tasks that we’re aiming to complete (in order of importance from greatest to least):
-Initialize React app
-Create a login and registration page
-Create assignment submission summary page
-Create all submissions table page
-Create a diff page for examining differences between a pair of submissions.
-Create a home page.
-Create a upload process page.
-Create a user landing page
+1. Initialize React app
+2. Create a login and registration page
+3. Create assignment submission summary page
+4. Create all submissions table page
+5. Create a diff page for examining differences between a pair of submissions.
+6. Create a home page.
+7. Create a upload process page.
+8. Create a user landing page
 
 For the back-end we have the following tasks that we’re aiming to complete (in order of importance from greatest to least):
-Create a basic Node server with Express.
-Create the database schema for the backend.
-Create an endpoint for uploading assignments.
-Create a route for getting a specific submission.
-Routes for getting multiple submissions.
-Create a route for getting a specific assignment.
-Routes for getting multiple assignments.
-Create a route for logging in.
-Create a route for registering.
-Create a function to unzip the uploaded file.
-Create a function to delete the folder once the submissions have been analyzed.
-Create a route for creating an assignment.
+1. Create a basic Node server with Express.
+2. Create the database schema for the backend.
+3. Create an endpoint for uploading assignments.
+4. Create a route for getting a specific submission.
+a. Routes for getting multiple submissions.
+5. Create a route for getting a specific assignment.
+a. Routes for getting multiple assignments.
+6. Create a route for logging in.
+7. Create a route for registering.
+8. Create a function to unzip the uploaded file.
+9. Create a function to delete the folder once the submissions have been analyzed.
+10. Create a route for creating an assignment.
 
 All of the above tasks can be referenced on FreedCamp for more details, they can be referenced in our deliverable 2 folders.
 
@@ -145,7 +139,6 @@ All of the above tasks can be referenced on FreedCamp for more details, they can
 #### Artifacts
 
 List/describe the artifacts you will produce in order to present your project idea.
-
 
 Entity Relationship Diagram 
 This helps us visualize the relationships between models that we need, using symbols to represent the information.
@@ -162,5 +155,4 @@ Sample assignments that are plagiarised to be used to demonstrate the capabiliti
  * Make sure to explain the purpose of each artifact (i.e. Why is it on your to-do list? Why is it useful for your team?)
  * Be concise, yet precise.         
    For example: "Build the website" is not precise at all, but "Build a static home page and upload it somewhere, so that it is publicly accessible" is much clearer.
-
 
