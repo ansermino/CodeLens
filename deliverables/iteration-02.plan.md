@@ -32,8 +32,6 @@ The responsibility of the developers in this group is to build an algorithm that
 
 #### Events
 
-Describe meetings (and other events) you are planning to have:
-
 Throughout this iteration we plan on having 5 weekly in-person meetings; the intended purpose is to catch-up with each other’s progress on their assigned tasks, help clear any misconceptions and difficulties. The following dates and locations are the dates and locations of these meetings.
 
 1. 17th October in Bahen 2270
@@ -120,8 +118,6 @@ All of the above tasks can be referenced on FreedCamp for more details, they can
 
 
 #### Artifacts
-
-List/describe the artifacts you will produce in order to present your project idea.
 
 * Entity Relationship Diagram 
     1. This helps us visualize the relationships between models that we need, using symbols to represent the information.
