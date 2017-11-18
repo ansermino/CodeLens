@@ -81,46 +81,45 @@ Created basic website layout and background
 
 
 
-Created an algorithm to detect plagiarism, which returns similarity percentage. Artifacts:
-    Python AST API: 
+* Created an algorithm to detect plagiarism, which returns similarity percentage. Artifacts:
+
+Python AST API: 
     https://greentreesnakes.readthedocs.io/en/latest/
     It turned out to that the Python official API for AST was very concise and not suitable for someone with little prior exposure. We used this custom API, which was very user-friendly, to parse the code and create an AST, which was used for the code comparison. An AST tree allows us to remove syntactic differences, such as comments and whitespace, between code so we can explore the semantic differences.
-
-    Document with our list algorithm ideas:            
+    
+Document with our list algorithm ideas:            
     https://docs.google.com/document/d/1LoVwpOHhTHiTfdSufw56fbhpsAcgmtvy-RTLJ_2sDkM/
-    We used this document to keep track of the ideas to implement in the algorithm.
+    
+We used this document to keep track of the ideas to implement in the algorithm.
 
-Account creation / Login
+* Account creation / Login
+
     For the account authentication, we used PassportJS which allows us to integrate authenticated sessions into our product. PassportJS allows us to perform local authentication, allowing us to be the ones storing their login details. In addition to using PassportJS we also used an bCrypt to aid in the encryption and hashing of passwords to ensure that all sensitive data is stored securely.
  
- * From most to least important.
- * Refer/link to artifact(s) that show that a goal/task was met/completed.
- * If a goal/task was not part of the original iteration plan, please mention it.
-
 #### Goals and/or tasks that were planned but not met/completed:
 
  * From most to least important.
  * For each goal/task, explain why it was not met/completed.      
    e.g. Did you change your mind, or did you just not get to it yet?
 
-Connect the front end with the back end.
-    The front end took longer to implement than expected and the back end is not
-    Currently we hard coded the front end so that we could present something for the demo.
+* Connect the front end with the back end.
+    1. The front end took longer to implement than expected and the back end is not
+    2. Currently we hard coded the front end so that we could present something for the demo.
     
-Connecting our front end to our back end
-    It took us longer than expected to complete the front end
-    This was due to our little experience with react
-    This delayed our integration with the front end
-    Now that we have our front end mostly completed, it should be easy to integrate with the back end
+* Connecting our front end to our back end
+    1. It took us longer than expected to complete the front end
+    2. This was due to our little experience with react
+    3. This delayed our integration with the front end
+    4. Now that we have our front end mostly completed, it should be easy to integrate with the back end
 
-Getting code from GitHub / StackOverflow to check against for plagiarism
-    We decided that this integration with external websites was more of an extra feature and probably shouldn’t be part of our MVP
-    So we decided that we don’t have to implement this idea
+* Getting code from GitHub / StackOverflow to check against for plagiarism
+    1. We decided that this integration with external websites was more of an extra feature and probably shouldn’t be part of our MVP
+    2. So we decided that we don’t have to implement this idea
 
-Getting samples of plagiarized code to test
-    We had asked Francois Pitt to provide us with samples of plagiarized code
-    Due to time constraints he was not able to provide us with these samples before the deadline of the iteration
-    By the next iteration we should have received the samples and should be able to test our algorithm against real cases of plagiarized code
+* Getting samples of plagiarized code to test
+    1. We had asked Francois Pitt to provide us with samples of plagiarized code
+    2. Due to time constraints he was not able to provide us with these samples before the deadline of the iteration
+    3. By the next iteration we should have received the samples and should be able to test our algorithm against real cases of plagiarized code
 
 ## Meeting Highlights
 
