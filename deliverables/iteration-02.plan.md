@@ -2,7 +2,7 @@
 ## Iteration 2
 
  * Start date: 16 October 2017
- * End date: 16 November 2017
+ * End date: 17 November 2017
 ## Process
 
 #### Introduction
