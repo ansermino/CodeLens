@@ -75,10 +75,14 @@ Each team member needs to adhere to our GitHub workflow. Occasionally one of us 
 #### Goals and/or tasks that were met/completed:
 
 Created basic website layout and background
-    We created a landing page for our website (insert image)
-    We created a login / registration page (insert image)
-    We created an assignment page that lists all assignments for a professor (insert image
+ * We created a landing page for our website (insert image)
+![Landing Page](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/Screen%20Shot%202017-11-17%20at%205.19.31%20PM.png?token=AORB-0pTA5jeFBCsSah24eRtsf7Find1ks5aGMvowA%3D%3D)
 
+ * We created a login / registration page (insert image)
+ ![Login Page](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/Screen%20Shot%202017-11-17%20at%205.19.44%20PM.png?token=AORB-4oLpS5ymvBLc1hDGj8KRo9G-hOxks5aGMynwA%3D%3D)
+
+ * We created an assignment page that lists all assignments for a professor (insert image
+![All Assignments](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/Screen%20Shot%202017-11-17%20at%205.19.56%20PM.png?token=AORB-2gKZtlXpQue6V7ch4m3BJdl-Xujks5aGM3QwA%3D%3D)
 
 
 * Created an algorithm to detect plagiarism, which returns similarity percentage. Artifacts:
