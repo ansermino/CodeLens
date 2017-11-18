@@ -37,14 +37,14 @@ Describe meetings (and other events) you are planning to have:
 Throughout this iteration we plan on having 5 weekly in-person meetings; the intended purpose is to catch-up with each other’s progress on their assigned tasks, help clear any misconceptions and difficulties. The following dates and locations are the dates and locations of these meetings.
 
 1. 17th October in Bahen 2270
-	In this specific meeting, our main focus will be identifying what needs to be done and assigning priorities to each task.
+	1. In this specific meeting, our main focus will be identifying what needs to be done and assigning priorities to each task.
 2. 24th October in Bahen 2270
 3. 31st October in Bahen 2270
 4. 3rd November in Bahen 2270
 5. 16th November in Bahen 2270
-	In this specific meeting, the main focus will be to review the material that we’ve created thus far for the deliverable 	and make changes where necessary, this includes the review of the script for the video and the video itself.
+	1. In this specific meeting, the main focus will be to review the material that we’ve created thus far for the deliverable 	and make changes where necessary, this includes the review of the script for the video and the video itself.
 6. 17th November in Bahen 2270
-	Final touches on iteration documents and video.
+	1. Final touches on iteration documents and video.
 
 In addition to weekly meetings, members of our group will open merge requests on GitHub and request a review from another member from their team. Ideally the merge request will get reviewed in 48 hours, and feedback will be left on the merge request. The code reviews will happen solely on Github unless there have been serious misunderstandings, in which case we will address them in person.
 
