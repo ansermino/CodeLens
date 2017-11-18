@@ -1,4 +1,4 @@
-# CodeLens (Team 01)
+# CodeLens (Team 1)
 ## Iteration 2
 
  * Start date: 16 October 2017
