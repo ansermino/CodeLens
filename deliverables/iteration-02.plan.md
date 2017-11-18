@@ -56,7 +56,7 @@ On top of code reviews, we intend on scheduling pair programming sessions. These
 We’ll be making the following artifacts to aid in the creation of our product for this iteration.
 * Task Boards
     1. We use the Freedcamp (task board) to track our high level tasks that we need to complete. The benefit of this is that it allows us to give members of our group specific tasks to complete using a high level description.
-    2. In addition to having the ability to assign tasks to specific members, we can also assign priorities to each task, so that the developer knows which issues to tackle first.
+    2. In addition to having the ability to assign tasks to specific members, we can also assign priorities to each task, so that the developer knows which issues to tackle first. To address how we assign priorities to the tasks, we voted as a team to decide which tasks needed to be tackled first, and this usually happened in the weekly meetings.
     3. Tasks will get assigned to members depending on what the issue is, i.e for the front end tasks, they will get assigned to the front end team and for the backend tasks, they will get assigned to the back end team.
 
 * GitHub Issues
@@ -71,13 +71,7 @@ We’ll be making the following artifacts to aid in the creation of our product 
 * Whiteboard Idea Sessions
     1. Allows us to rapidly generate ideas and pinpoint flaws through group discussions. These will coincide with our weekly meetings and will be most likely occur in the early stages of this iteration.
 
-List/describe the artifacts you will produce in order to organize your team.       
 
- * Artifacts can be To-do lists, Task boards, schedule(s), etc.
- * We want to understand:
-   * How do you keep track of what needs to get done?
-   * How do you prioritize tasks?
-   * How do tasks get assigned to team members?
 
 #### Git / GitHub workflow
 
