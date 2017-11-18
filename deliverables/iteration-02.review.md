@@ -1,4 +1,4 @@
-# CodeLens (Team 1)
+# CodeLens
 
 ## Iteration 2 - Review & Retrospect
 
@@ -11,42 +11,35 @@ We have streamlined our process since the last iteration and our workflow has be
 
 #### Decisions that turned out well
 
-List process-related (i.e. team organization) decisions that, in retrospect, turned out to be successful.
-
- * 2 - 4 decisions.
- * Ordered from most to least important.
- * Explain why (i.e. give a supporting argument) you consider a decision to be successful.
- * Feel free to refer/link to process artifact(s).
-
 * Two Weekly Meetings
 
-For iteration 1 we met once per week. Part way through iteration 2 we realized that we were not holding ourselves accountable for our poor time management so we decided to hold meetings twice per week. This improved our productivity, but our consistency 
-
+For iteration 1 we met once per week. Part way through iteration 2 we realized that we were not holding ourselves accountable for our poor time management so we decided to hold meetings twice per week. This improved our productivity.
 
 * Code Review
 
 Code reviewing allowed us to maintain the high quality of the code base. Due to it, we didn’t have to redo code and concentrate on implementing new features.  
 
-
 * Pair programming
 
 We all seem to be on a similar level when it comes to Python, but each of us has differences when it comes to web programming. By working on the project in pairs, the more experienced team member was able to teach some new concepts to the less experienced team member. Besides that, pair programming also improves the quality of code and improves our chances of finding bugs more quickly. For example, Ivan has much more experience with backend than Patrick but by working side by side they were able to find bugs much easier (immediate code review) and Patrick was able to learn the basics of Node and JavaScript and is able to apply those concepts when working alone.
-
 
 * Switching team members
 
 Switching teams had both positive and negative consequences and that’s why it appears in both lists. By moving Daniel over from the front end team to the back end team we finished much more of the back end than we expected to (it put us ahead of schedule). Fast tracking the back end is evidently a positive thing, but we did experience some set back (which is explained in the next list).
 
-
 * Switching from Trello to Freedcamp
 
 Switching to Freedcamp did not improve our process to much. We didn’t have too much on Trello yet so the switch didn’t set us back. Freedcamp affords us to better section off tasks per team and assign people to jobs. At the beginning of the iteration we planned out the steps that we would tackle and delegated these steps to each subteam. Members of each subteam can pick up a task. Task status can be changed from not being worked on, to in progress, to completed. Freedcamp improved our workflow and improved each team member’s understanding of what needed to be done (i.e. everyone was on the same page).
 
+Freedcamp Kanban Board:
 
+![Front End Board](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts/freedcamp_frontend.png?raw=true)
+
+![Back End Board](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts/freedcamp_backend.png?raw=true)
+
+![Algorithm Board](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts/freedcamp_algo.png?raw=true)
 
 #### Decisions that did not turn out as well as we hoped
-
-List process-related (i.e. team organization) decisions that, in retrospect, were not as successful as you thought they would be.
 
 * Switching team members.
 
@@ -55,14 +48,6 @@ Switching teams had both positive and negative consequences and that’s why it 
 * Not meeting during reading week.
 
 Not meeting during reading week was a poor idea. Before reading week we argued that we didn’t have to meet because we could have online meetings through things like Skype and Google Hangouts. This plan never materialized because we didn’t set up any meeting times before reading week. Poor planning resulted in little work being done over the reading week. We also did not do much due to the other assignments and midterms that most of us had after reading week. This is not an excuse and this has to be fixed. There was no accountability for unfinished work. We tried to introduce more accountability by meeting twice per week. This plan worked initially, but our consistency dropped off during reading week. We intend to fix this for the next iteration by using three weekly sprints prior to the final demo deadline. Better planning for these sprints along with the two weekly meetings should improve our productivity and hold us more accountable to each other.
-
-
-
-
- * 2 - 4 decisions.
- * Ordered from most to least important.
- * Feel free to refer/link to process artifact(s).
-
 
 #### Planned changes
 
