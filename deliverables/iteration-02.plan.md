@@ -32,14 +32,14 @@ Describe meetings (and other events) you are planning to have:
 
 Throughout this iteration we plan on having 5 weekly in-person meetings; the intended purpose is to catch-up with each other’s progress on their assigned tasks, help clear any misconceptions and difficulties. The following dates and locations are the dates and locations of these meetings.
 
-17th October in Bahen 2270
-In this specific meeting, our main focus will be identifying what needs to be done and assigning priorities to each task.
-24th October in Bahen 2270
-31st October in Bahen 2270
-3rd November in Bahen 2270
-16th November in Bahen 2270
-In this specific meeting, the main focus will be to review the material that we’ve created thus far for the deliverable and make changes where necessary, this includes the review of the script for the video and the video itself.
-17th November in Bahen 2270
+1. 17th October in Bahen 2270
+	In this specific meeting, our main focus will be identifying what needs to be done and assigning priorities to each task.
+2. 24th October in Bahen 2270
+3. 31st October in Bahen 2270
+4. 3rd November in Bahen 2270
+5. 16th November in Bahen 2270
+	In this specific meeting, the main focus will be to review the material that we’ve created thus far for the deliverable 	and make changes where necessary, this includes the review of the script for the video and the video itself.
+6. 17th November in Bahen 2270
 	Final touches on iteration documents and video.
 
 In addition to weekly meetings, members of our group will open merge requests on GitHub and request a review from another member from their team. Ideally the merge request will get reviewed in 48 hours, and feedback will be left on the merge request. The code reviews will happen solely on Github unless there have been serious misunderstandings, in which case we will address them in person.
@@ -50,20 +50,22 @@ On top of code reviews, we intend on scheduling pair programming sessions. These
 #### Artifacts
 
 We’ll be making the following artifacts to aid in the creation of our product for this iteration.
-Task Boards
-We use the Freedcamp (task board) to track our high level tasks that we need to complete. The benefit of this is that it allows us to give members of our group specific tasks to complete using a high level description.
-In addition to having the ability to assign tasks to specific members, we can also assign priorities to each task, so that the developer knows which issues to tackle first.
-Tasks will get assigned to members depending on what the issue is, i.e for the front end tasks, they will get assigned to the front end team and for the backend tasks, they will get assigned to the back end team.
-GitHub Issues
-For more specific and sub-issues we create them on the GitHub issue tracker so that we have a place where we can log discussions for future reference.
-It ensures that all merge requests have a relevant issue that their addressing.
-Interactive Interface Mockup
-Allows us to quickly create prototypes to see how a change could impact a user’s experience. 
-Allows backend developers to visualize how their data will be represented through the user interface.
-Entity-Relationship Diagram
-The ER diagram is used to represent the models and relationships.
-Whiteboard Idea Sessions
-Allows us to rapidly generate ideas and pinpoint flaws through group discussions. These will coincide with our weekly meetings and will be most likely occur in the early stages of this iteration.
+* Task Boards
+    1. We use the Freedcamp (task board) to track our high level tasks that we need to complete. The benefit of this is that it allows us to give members of our group specific tasks to complete using a high level description.
+    2. In addition to having the ability to assign tasks to specific members, we can also assign priorities to each task, so that the developer knows which issues to tackle first.
+    3. Tasks will get assigned to members depending on what the issue is, i.e for the front end tasks, they will get assigned to the front end team and for the backend tasks, they will get assigned to the back end team.
+
+* GitHub Issues
+    1. For more specific and sub-issues we create them on the GitHub issue tracker so that we have a place where we can log discussions for future reference.
+    2. It ensures that all merge requests have a relevant issue that their addressing.
+
+* Interactive Interface Mockup
+    1. Allows us to quickly create prototypes to see how a change could impact a user’s experience. 
+    2. Allows backend developers to visualize how their data will be represented through the user interface.
+* Entity-Relationship Diagram
+    1. The ER diagram is used to represent the models and relationships.
+* Whiteboard Idea Sessions
+    1. Allows us to rapidly generate ideas and pinpoint flaws through group discussions. These will coincide with our weekly meetings and will be most likely occur in the early stages of this iteration.
 
 List/describe the artifacts you will produce in order to organize your team.       
 
@@ -140,16 +142,18 @@ All of the above tasks can be referenced on FreedCamp for more details, they can
 
 List/describe the artifacts you will produce in order to present your project idea.
 
-Entity Relationship Diagram 
-This helps us visualize the relationships between models that we need, using symbols to represent the information.
-Interactive Mockup for the Website
-This helps us create rapid prototypes so that we can incorporate feedback before implementing it through code. 
-The minimal viable product
-The front-end component (web interface)
-This includes the code and assets for the dynamic web interface.
-The back-end component 
-This includes the code and the algorithm that checks if a pair of assignments are plagiarised.
-Sample assignments that are plagiarised to be used to demonstrate the capabilities of our plagiarism algorithm.
+* Entity Relationship Diagram 
+    1. This helps us visualize the relationships between models that we need, using symbols to represent the information.
+* Interactive Mockup for the Website
+    1. This helps us create rapid prototypes so that we can incorporate feedback before implementing it through code. 
+* The minimal viable product
+    1. The front-end component (web interface)
+    
+        This includes the code and assets for the dynamic web interface.
+    2. The back-end component 
+    
+        This includes the code and the algorithm that checks if a pair of assignments are plagiarised.
+* Sample assignments that are plagiarised to be used to demonstrate the capabilities of our plagiarism algorithm.
 
  * Artifacts can be text, code, images, videos, interactive mock-ups and/or any other useful artifact you can think of.
  * Make sure to explain the purpose of each artifact (i.e. Why is it on your to-do list? Why is it useful for your team?)
