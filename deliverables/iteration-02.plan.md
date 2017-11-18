@@ -11,17 +11,21 @@ During this iteration our main goal is to decide on what steps we need to take t
 #### Roles & responsibilities
 
 Front-end Developer (David Ansermino)
+
 The responsibility of the front-end developer is to design and build the interface. In our case the website that our users will interact with. With respect to our minimal viable product, how the flow of creating an assignment works and how we should display meaningful information obtained from the backend to our user.
 
 Back-end Developers (Daniel Chan, Patrick Gronowski, Ivan Topolcic)
+
 The responsibility of the developers in this group is to architect and build the infrastructure that allows the interactions on the front end to be processed. In this phase, they’ll be responsible for setting up the server, the relevant routes that will transmit data between the client and the server.
 
 Code Reviewer (All)
+
 The code reviewer(s) are responsible for ensuring that quality code gets committed to the codebase, that is to say they are the last line of defence in preventing “bad” code. They should ensure that the code that they’re reviewing follows proper style guides and ensure that the logic of the code is sound.
 
 Every member in our group takes on this role, ensuring that every merge request is reviewed by at least one other individual.
 
 Plagiarism Algorithm Developers (Ihor Veselovskyy, Frank Karunaratna)
+
 The responsibility of the developers in this group is to build an algorithm that will detect similarities between two sets of code. Starting with detecting similarity between pieces of code that are exactly the same. Then move on to detect similarities between two pieces of code where things like variable names, function names and class names have been changed. Add weights to the similarities that have been found so that a percentage of similarity can be given to the user. Use the AST to detect functionally similar code regardless of whitespace and comments.
 
 
@@ -88,20 +92,6 @@ Once the changes have been made to address the comments, the reviewer can have a
 The reason why we chose this workflow is that it maps each issue to a relevant pull request and allows us keep track of any discussions. So that in the future, if we need to refactor code or perform a code migration we can take note of any design decisions that we made during the initial implementation.
 
 
-Describe your Git / GitHub workflow.     
-Essentially, we want to understand how your team members share a codebase and avoid conflicts.
-
- * Be concise, yet precise.      
-For example, "we use pull-requests" is not a precise statement since it leaves too many open questions - Pull-requests from where to where? Who reviews the pull-requests? Who is responsible for merging them? etc.
- * If applicable, specify any naming conventions or standards you decide to adopt.
- * Don't forget to **explain why** you chose this workflow.
-
-
-
-
-
-
-
 ## Product
 
 #### Goals and tasks
@@ -134,9 +124,6 @@ a. Routes for getting multiple assignments.
 
 All of the above tasks can be referenced on FreedCamp for more details, they can be referenced in our deliverable 2 folders.
 
- * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
- * Order the items from most to least important.
- * Feel free (but not obligated) to specify some/all tasks as user stories.
 
 #### Artifacts
 
