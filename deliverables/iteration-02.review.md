@@ -90,38 +90,24 @@ We used this document to keep track of the ideas to implement in the algorithm.
  
 #### Goals and/or tasks that were planned but not met/completed:
 
- * From most to least important.
- * For each goal/task, explain why it was not met/completed.      
-   e.g. Did you change your mind, or did you just not get to it yet?
+* Connecting our front end to our back end.
+    1. It took us longer than expected to complete the front end.
+    2. This was due to our little experience with react.
+    3. This delayed our integration with the front end.
+    4. Now that we have our front end mostly completed, it should be easy to integrate with the back end.
 
-* Connect the front end with the back end.
-    1. The front end took longer to implement than expected and the back end is not
-    2. Currently we hard coded the front end so that we could present something for the demo.
-    
-* Connecting our front end to our back end
-    1. It took us longer than expected to complete the front end
-    2. This was due to our little experience with react
-    3. This delayed our integration with the front end
-    4. Now that we have our front end mostly completed, it should be easy to integrate with the back end
+* Getting code from GitHub / StackOverflow to check against for plagiarism.
+    1. We decided that this integration with external websites was more of an extra feature and probably shouldn’t be part of our MVP.
+    2. So we decided that we don’t have to implement this idea.
 
-* Getting code from GitHub / StackOverflow to check against for plagiarism
-    1. We decided that this integration with external websites was more of an extra feature and probably shouldn’t be part of our MVP
-    2. So we decided that we don’t have to implement this idea
-
-* Getting samples of plagiarized code to test
-    1. We had asked Francois Pitt to provide us with samples of plagiarized code
-    2. Due to time constraints he was not able to provide us with these samples before the deadline of the iteration
-    3. By the next iteration we should have received the samples and should be able to test our algorithm against real cases of plagiarized code
+* Getting samples of plagiarized code to test.
+    1. We had asked Francois Pitt to provide us with samples of plagiarized code.
+    2. Due to time constraints he was not able to provide us with these samples before the deadline of the iteration.
+    3. By the next iteration we should have received the samples and should be able to test our algorithm against real cases of plagiarized code.
 
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
-
- * 2 - 4 items
- * Short (no more than one short paragraph per item)
- * High-level concepts that should guide your work for the next iteration.
- * These concepts should help you decide on where to focus your efforts.
- * Can be related to product and/or process.
 
 For some of our weekly meetings we would have team members arriving late, this would cause problems because not all of us live on campus and staying late is not possible. This would result in parts of our meetings, usually 30min at the beginning and end, where we would have team member missing. By enforcing a strict start and end time we can ensure that our entire meetings are productive.
 
