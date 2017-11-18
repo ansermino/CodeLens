@@ -75,14 +75,14 @@ Each team member needs to adhere to our GitHub workflow. Occasionally one of us 
 #### Goals and/or tasks that were met/completed:
 
 Created basic website layout and background
- * We created a landing page for our website (insert image)
-![Landing Page](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/Screen%20Shot%202017-11-17%20at%205.19.31%20PM.png?token=AORB-0pTA5jeFBCsSah24eRtsf7Find1ks5aGMvowA%3D%3D)
+ * We created a landing page for our website
+![Landing Page](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/web_homepage.png?token=AORB-_5W2R9BYDXe4tbrBlnJHMrT2m5Dks5aGM6XwA%3D%3D)
 
- * We created a login / registration page (insert image)
- ![Login Page](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/Screen%20Shot%202017-11-17%20at%205.19.44%20PM.png?token=AORB-4oLpS5ymvBLc1hDGj8KRo9G-hOxks5aGMynwA%3D%3D)
+ * We created a login / registration page
+ ![Login Page](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/web_loginpanel.png?token=AORB-8vGVU5zOykKfJsFs9HP2aMR_WNBks5aGM6ZwA%3D%3D)
 
- * We created an assignment page that lists all assignments for a professor (insert image
-![All Assignments](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/Screen%20Shot%202017-11-17%20at%205.19.56%20PM.png?token=AORB-2gKZtlXpQue6V7ch4m3BJdl-Xujks5aGM3QwA%3D%3D)
+ * We created an assignment page that lists all assignments for a professor
+![All Assignments](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/web_assignmentsview.png?token=AORB-wkfSOyHg1c4i3Wvmw6moxba-W7Rks5aGM6cwA%3D%3D)
 
 
 * Created an algorithm to detect plagiarism, which returns similarity percentage. Artifacts:
