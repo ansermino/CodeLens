@@ -25,7 +25,7 @@ const addAssignmentStyle = {
 }
 
 const getAssignments = () => new Promise((resolves, rejects) => {
-  const url = 'localhost:3000/api/getAssignments'
+  const url = 'http://localhost:3000/api/getAssignments'
   const request = new XMLHttpRequest()
   request.open('GET', url)
   request.onload = () => resolves(JSON.parse(request.response))
