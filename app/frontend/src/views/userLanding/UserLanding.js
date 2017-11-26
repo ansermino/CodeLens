@@ -40,7 +40,7 @@ class UserLanding extends React.Component{
     this.state = {assignments: []}
   }
   componentDidMount(){
-    getAssignments.then((data)=>{
+    getAssignments().then((data)=>{
       console.log(data)
       this.setState({assignments: data})
       this.render()
