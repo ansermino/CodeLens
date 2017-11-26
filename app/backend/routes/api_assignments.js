@@ -5,22 +5,6 @@ const models = require('../models');
 const Assignments = models.assignment;
 const Submissions = models.submission;
 
-router.get('/create', function(req, res) {
-
-});
-
-router.post('/create/name', function(req, res) {
-
-});
-
-router.post('/create/starter-code', function(req, res) {
-
-});
-
-router.post('/create/submissions', function(req, res) {
-
-});
-
 router.get('/all', function(req, res) {
 	Assignments.findAll({attributes: ['id', 'title']}).then(assignments => {
 		res.json(assignments);
