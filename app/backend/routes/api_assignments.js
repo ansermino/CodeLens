@@ -32,9 +32,9 @@ router.get('/submissions/:id', function(req, res) {
 		where: {
 			assignment_id: req.params.id,
 		},
-		attributes: ['id', 'title']
-	}).then(assignment => {
-		res.json(assignment);
+		attributes: ['id', 'student_id']
+	}).then(submissions => {
+		res.json(submissions);
 	})
 });
 
