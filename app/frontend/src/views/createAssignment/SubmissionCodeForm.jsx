@@ -42,10 +42,10 @@ class SubmissionCodeForm extends React.Component{
         <Paper style={style.paper}>
           <div style={style.uploadDiv}>
             <p>Upload Student Submissions...</p>
-            <input type="file" />
+            <input type="file" accept=".zip" onChange={this.handleChange}/>
           </div>
           <div>
-            <Link style={style.nextButton} to="/assignment"><RaisedButton label="next"/></Link>
+            <RaisedButton label="next" onClick={this.props.completeForm}/>
           </div>
 
         </Paper>
