@@ -42,7 +42,7 @@ class StarterCodeForm extends React.Component{
         <Paper style={style.paper}>
           <div style={style.uploadDiv}>
             <p>Upload starter code...</p>
-            <input type="file" />
+            <input type="file" onChange={this.handleChange}/>
           </div>
           <div>
             <Link style={style.nextButton} to="/create/submissions"><RaisedButton label="next"/></Link>
