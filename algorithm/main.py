@@ -22,6 +22,14 @@ def start_algo(file1, file2):
     else:
         print("No plagiarism! The similarity is {}%".format(result * 100))
 
+def external_start_algo(file1, file2):
+    """
+    Starts the algorithm.
+
+    To be used when starting the plagiarism check externally.
+    """
+    start_algo(file1, file2);
+
 
 if __name__ == "__main__":
 
