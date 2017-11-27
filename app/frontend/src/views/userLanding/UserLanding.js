@@ -25,7 +25,7 @@ const addAssignmentStyle = {
 }
 
 const getAssignments = () => new Promise((resolves, rejects) => {
-  const url = 'localhost:3000/api/getAssignments'
+  const url = 'http://localhost:3000/api/getAssignments'
   const request = new XMLHttpRequest()
   request.open('GET', url)
   request.onload = () => resolves(JSON.parse(request.response))
@@ -40,7 +40,7 @@ class UserLanding extends React.Component{
     this.state = {assignments: []}
   }
   componentDidMount(){
-    getAssignments.then((data)=>{
+    getAssignments().then((data)=>{
       console.log(data)
       this.setState({assignments: data})
       this.render()
