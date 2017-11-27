@@ -5,7 +5,7 @@ import AssignmentNameForm from './AssignmentNameForm'
 import StarterCodeForm from './StarterCodeForm'
 import SubmissionCodeForm from './SubmissionCodeForm'
 import Processing from './Processing'
-require('dotenv').config({path:"../../../.env"})
+require('dotenv').config()
 
 const style = {
   root: {
@@ -15,7 +15,8 @@ const style = {
 }
 
 const sendData = (name, starterCode, submissions) => new Promise((resolves, rejects) => {
-  const url = process.env.BASE_URL + '/api/assignments/create'
+  console.log('Base url: ' + process.env.REACT_APP_BASE_URL)
+  const url = process.env.REACT_APP_BASE_URL + '/api/assignments/create'
   const request = new XMLHttpRequest()
   request.open('POST', url)
   request.setRequestHeader('Content-Type', 'multipart/mixed')

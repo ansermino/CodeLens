@@ -18,8 +18,8 @@
     "simplediff": "^0.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "REACT_APP_BASE_URL=localhost:3000 react-scripts start",
+    "build": "REACT_APP_BASE_URL=ADD_TO_PACKAGE_DOT_JSON! react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
