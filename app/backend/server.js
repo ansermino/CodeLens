@@ -11,7 +11,11 @@ const passport = require('passport');
 // Specifically for test. Should have a check for environment variables, dev or prod.
 const testViews = require('./routes/api_test');
 
-
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 app.use(bodyParser.urlencoded({
   extended: true
 }));
