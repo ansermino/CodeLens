@@ -19,12 +19,16 @@ const sendData = (name, starterCode, submissions) => new Promise((resolves, reje
   const url = process.env.REACT_APP_BASE_URL + '/api/assignments/create'
   const request = new XMLHttpRequest()
   request.open('POST', url)
-  request.setRequestHeader('Content-Type', 'multipart/mixed')
+  // request.setRequestHeader('Content-Type', 'multipart/form-data')
   request.onload = () => resolves(JSON.parse(request.response))
   request.onerror = (err) => rejects(err)
   var formData = new FormData()
   formData.append("title", name)
-  formData.append("files", [starterCode, submissions])
+  formData.append("assignments", submissions)
+  formData.append("starter", starterCode)
+  formData.append("plagiarism_threshold", 50)
+  console.log(submissions);
+  console.log(starterCode);
   request.send(formData)
 })
 

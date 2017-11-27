@@ -32,8 +32,8 @@ class StarterCodeForm extends React.Component{
     this.handleChange = this.handleChange.bind(this)
   }
   handleChange(event){
-    this.setState({value: event.target.value})
-    this.props.update(event.target.value)
+    this.setState({value: event.target.files[0]})
+    this.props.update(event.target.files[0])
   }
   render(){
     return(

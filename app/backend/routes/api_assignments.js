@@ -38,23 +38,27 @@ const assignmentFiles = upload.fields([
 );
 router.post('/create', assignmentFiles, function (req, res, next) {
 
+	console.log(req.files);
+	console.log(req.body);
+
   if (!req.files['assignments'] || !req.files['starter'] ||
-      !req.body.plagiarism_threshold || req.plagiarism_threshold < 0 ||
+      !req.body.plagiarism_threshold || req.body.plagiarism_threshold < 0 ||
       req.body.plagiarism_threshold > 100) {
-    res.sendStatus(400);
+    return res.sendStatus(400);
   }
 
   Assignments.create({
     title: req.body.title,
     plagiarism_threshold: req.body.plagiarism_threshold,
     folder_hash: req.files['assignments'][0].filename,
-    starter_hash: req.files['starter'][0].filename
+    starter_hash: req.files['starter'][0].filename,
+    instructor_id: 2
   }).then((assignment) => {
     util.initPlagiarismChecks(req.files['assignments'][0].filename, req.files['starter'][0].filename);
-    res.send({assignments: assignment, assignments_path: req.files['assignments'][0].filename,
-      starter_path: req.files['starter'][0].filename});
+    res.json({id: assignment.id});
+  }, (error) => {
+  	console.log(error);
   });
-
 });
 
 router.get('/create', function (req, res) {
