@@ -1,5 +1,9 @@
+const PythonShell = require('python-shell');
+
+
 /**
- * Middleware for authentication.
+ * Middleware for authentication. And utilities for running the plagiarism
+ * algorithm.
  */
 
 function isLoggedIn(req, res, next) {
@@ -10,6 +14,25 @@ function isLoggedIn(req, res, next) {
   }
 }
 
+function initPlagiarismChecks(submissions, starterCode) {
+
+  const base = "local/assignments/";
+
+  const opts = {
+    pythonPath: 'python3',
+    args: [base + submissions, base + starterCode]
+  };
+
+  PythonShell.run('algorithm/main.py', opts, (err, results) => {
+    if(err) {
+      console.log(err);
+    } else {
+      console.log(results);
+    }
+  });
+}
+
 module.exports = {
-  isLoggedIn: isLoggedIn
+  isLoggedIn: isLoggedIn,
+  initPlagiarismChecks : initPlagiarismChecks
 };
