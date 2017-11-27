@@ -25,7 +25,8 @@ const addAssignmentStyle = {
 }
 
 const getAssignments = () => new Promise((resolves, rejects) => {
-  const url = 'http://localhost:3000/api/getAssignments'
+  const url = process.env.REACT_APP_BASE_URL + '/api/assignments/all'
+  console.log(url)
   const request = new XMLHttpRequest()
   request.open('GET', url)
   request.onload = () => resolves(JSON.parse(request.response))
