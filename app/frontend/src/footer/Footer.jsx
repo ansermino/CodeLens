@@ -2,9 +2,13 @@ import React from 'react'
 
 const style = {
   rootDiv: {
-    color: "grey",
+    color: "white",
     textAlign: "center",
-    paddingTop: "2rem"
+    padding: "1rem 0 1rem 0",
+    background: "#444",
+    height: "100%",
+    verticalAlign: "100%",
+    fontWeight: "thin",
   }
 }
 
