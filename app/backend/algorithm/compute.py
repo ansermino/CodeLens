@@ -42,7 +42,7 @@ def run_algo_on_dirs(dir1, dir2, starter=None):
         dir2_file_path = "./" + dir2 + "/" + dir2_files[x]
 
         plag = start_algo(dir1_file_path, dir2_file_path, starter_file_path)
-        cur.execute("""INSERT INTO public.plagiarism_tuples (student_a, student_b,
+        cur.execute("""INSERT INTO public.plagiarism_tuples (submission_a, submission_b,
                     plagiarism_score, \"createdAt\", \"updatedAt\")
                     VALUES (%s, %s, %s, %s, %s);
                     """,
