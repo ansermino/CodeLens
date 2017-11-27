@@ -27,7 +27,6 @@ def start_algo(file1, file2, file3=None) -> float:
         print("PLAGIARISM DETECTED: {} and {}, with {}% confidence".format(file1, file2, (result * 100)))
     else:
         print("No plagiarism! The similarity is {}%".format(result * 100))
-    print(result)
     return result
 
 if __name__ == "__main__":

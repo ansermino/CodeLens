@@ -13,7 +13,6 @@ if __name__ == "__main__":
     for subm1 in submissions:
         submissions.remove(subm1)
         for subm2 in submissions:
-            print("gg")
             run_algo_on_dirs(subm1, subm2, starter_subm)
 
     # shutil.rmtree("temp_dir")
