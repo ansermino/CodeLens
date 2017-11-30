@@ -2,6 +2,8 @@ import ast
 import modDump
 FUNCTION_NAME = "FUNCTION_NAME_REMOVED"
 VAR_NAME = "NAME_REMOVED"
+difflines1 = []
+difflines2 = []
 
 class LastCheck(ast.NodeVisitor):
 
@@ -96,11 +98,11 @@ class ComputePlag(ast.NodeVisitor):
         return self._funcdef, self._expr, self._assign, self._call, self._if, self._for, self._while
 
     def visit_FunctionDef(self, node):
-        self._funcdef.append(ast.dump(node.args))
+        self._funcdef.append((ast.dump(node.args), node.lineno))
         self.generic_visit(node)
 
     def visit_Expr(self, node):
-        self._expr.append(ast.dump(node))
+        self._expr.append((ast.dump(node), node.lineno))
         self.generic_visit(node)
 
     def visit_arg(self, node):
@@ -110,27 +112,28 @@ class ComputePlag(ast.NodeVisitor):
         self.generic_visit(node)
 
     def visit_Assign(self, node):
-        self._assign.append(ast.dump(node))
+        self._assign.append((ast.dump(node), node.lineno))
         self.generic_visit(node)
 
     def visit_Return(self, node):
         self.generic_visit(node)
 
     def visit_Call(self, node):
-        self._call.append(ast.dump(node))
+        self._call.append((ast.dump(node), node.lineno))
         self.generic_visit(node)
 
     def visit_If(self, node):
-        self._if.append(ast.dump(node.test))
+        self._if.append((ast.dump(node.test),node.lineno))
         self.generic_visit(node)
 
     def visit_For(self, node):
-        self._for.append(ast.dump(node.target))
+        self._for.append((ast.dump(node.target), node.lineno))
         self.generic_visit(node)
 
     def visit_While(self, node):
-        self._while.append(ast.dump(node.test))
+        self._while.append((ast.dump(node.test),node.lineno))
         self.generic_visit(node)
+
 
 class recordNames(ast.NodeVisitor):
     def __init__(self):
@@ -140,14 +143,14 @@ class recordNames(ast.NodeVisitor):
         return self._names
 
     def visit_FunctionDef(self, node):
-        self._names.append(node.name)
+        self._names.append((node.name, node.lineno))
         self.generic_visit(node)
 
     def visit_Expr(self, node):
         self.generic_visit(node)
 
     def visit_arg(self, node):
-        self._names.append(node.arg)
+        self._names.append((node.arg, node.lineno))
         self.generic_visit(node)
 
     def visit_Name(self, node):
@@ -156,7 +159,7 @@ class recordNames(ast.NodeVisitor):
     def visit_Assign(self, node):
         for child in ast.iter_child_nodes(node):
             if isinstance(child, ast.Name):
-                self._names.append(child.id)
+                self._names.append((child.id, child.lineno))
         self.generic_visit(node)
 
     def visit_Return(self, node):
@@ -172,9 +175,9 @@ class recordNames(ast.NodeVisitor):
         if isinstance(node.target, ast.Tuple):
             for child in ast.iter_child_nodes(node.target):
                 if isinstance(child, ast.Name):
-                    self._names.append(child.id)
+                    self._names.append((child.id, child.lineno))
         if isinstance(node.target, ast.Name):
-            self._names.append(node.target.id)
+            self._names.append((node.target.id, node.target.lineno))
 
         self.generic_visit(node)
 
@@ -201,27 +204,48 @@ def computeDump(tree):
     return check.find_count(), names
 
 
-def influence(list1, list2, weight):
+def flatten(x):
+    if isinstance(x, list):
+        return [a for i in x for a in flatten(i)]
+    else:
+        return [x]
+
+def influence(list1, list2, starter, weight):
     if (len(list1) + len(list2)) == 0:
         return 0
+    starter = [x[0] for x in starter]
+    list1clean = [x[0] for x in list1 if x[0] not in starter]
+    list2clean = [x[0] for x in list2 if x[0] not in starter]
 
-    diff = list(set(list1).symmetric_difference(set(list2)))
-    infl = (1 - (float(len(diff)) / (len(list1) + len(list2)))) * weight
+    diff = list(set(list1clean).symmetric_difference(set(list2clean)))
+    lines1 = [x[1] for x in list1 if x[0] not in diff]
+    lines2 = [x[1] for x in list2 if x[0] not in diff]
+    difflines1.append(lines1)
+    difflines2.append(lines2)
+    infl = (1 - (float(len(diff)) / (len(list1clean) + len(list2clean)))) * weight
     return infl
 
 
-def finalResult(tree1, tree2):
+def finalResult(tree1, tree2, starter=None):
     (funcs1, expr1, assign1, call1, if1, for1, while1), names1 = computeDump(tree1)
     (funcs2, expr2, assign2, call2, if2, for2, while2), names2 = computeDump(tree2)
+    if starter is not None:
+        (funcs3, expr3, assign3, call3, if3, for3, while3), names3 = computeDump(starter)
+    else:
+        (funcs3, expr3, assign3, call3, if3, for3, while3), names3 = \
+            ([], [], [], [], [], [], []), []
 
-    score = influence(funcs1, funcs2, 0.03)
-    score += influence(expr1, expr2, 0.31)
-    score += influence(assign1, assign2, 0.29)
-    score += influence(call1, call2, 0.18)
-    score += influence(if1, if2, 0.05)
-    score += influence(for1, for2, 0.03)
-    score += influence(while1, while2, 0.03)
-    score += influence(names1, names2, 0.08)
-
+    score = influence(funcs1, funcs2, funcs3, 0.03)
+    score += influence(expr1, expr2, expr3, 0.31)
+    score += influence(assign1, assign2, assign3, 0.29)
+    score += influence(call1, call2, call3, 0.18)
+    score += influence(if1, if2, if3, 0.05)
+    score += influence(for1, for2, for3, 0.03)
+    score += influence(while1, while2, while3, 0.03)
+    score += influence(names1, names2, names3, 0.08)
+    diff1 = list(set(flatten(difflines1)))
+    diff2 = list(set(flatten(difflines2)))
+    print(diff1)
+    print(diff2)
     return score
 
