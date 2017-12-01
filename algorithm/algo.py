@@ -219,6 +219,11 @@ def flatten(x):
         return [x]
 
 def influence(list1, list2, starter, weight):
+    """
+    Calculate the ammount of similarity given the weight.
+    Returns the influence that will be added to the total similarity score.
+    """
+    
     if (len(list1) + len(list2)) == 0:
         return 0
     starter = [x[0] for x in starter]
