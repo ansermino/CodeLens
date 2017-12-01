@@ -20,6 +20,11 @@ class LastCheck(ast.NodeVisitor):
 
 
 class RemoveFuncNames(ast.NodeVisitor):
+    """
+    Removes the function names from the abstract syntax trees that are created.
+    The function names are replaced with the constant FUNCTION_NAME so that we can
+    more easily detect plaigerism between the pieces of code.
+    """
 
     def __init__(self, funcs, args):
         self._funcList = funcs.copy()
@@ -205,6 +210,9 @@ def computeDump(tree):
 
 
 def flatten(x):
+    """
+    Flatten x.
+    """
     if isinstance(x, list):
         return [a for i in x for a in flatten(i)]
     else:
@@ -227,6 +235,11 @@ def influence(list1, list2, starter, weight):
 
 
 def finalResult(tree1, tree2, starter=None):
+    """
+    Calculate the final plaigerism percentage.
+    Using the specified weights for each of the attributes.
+    """
+    
     (funcs1, expr1, assign1, call1, if1, for1, while1), names1 = computeDump(tree1)
     (funcs2, expr2, assign2, call2, if2, for2, while2), names2 = computeDump(tree2)
     if starter is not None:
