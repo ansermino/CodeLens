@@ -30,6 +30,7 @@ def run_algo_on_dirs(dir1, dir2, starter=None):
 
     conn = psycopg2.connect("dbname=plagiarism user=csc301 password=team01")
     cur = conn.cursor()
+    plag = ()
 
     for x in range(len(dir1_files)):
 
@@ -46,18 +47,19 @@ def run_algo_on_dirs(dir1, dir2, starter=None):
                     plagiarism_score, \"createdAt\", \"updatedAt\")
                     VALUES (%s, %s, %s, %s, %s);
                     """,
-                    (1, 2, plag * 100, "NOW()", "NOW()"))
+                    (1, 2, plag[0] * 100, "NOW()", "NOW()"))
 
     conn.commit()
     cur.close()
     conn.close()
+    return plag[1], plag[2]
 
 
 if __name__ == "__main__":
 
     if len(sys.argv) != 3:
         print("Usage: compute.py dir1 dir2")
-        sys.exit();
+        sys.exit()
 
     dir1 = sys.argv[1]
     dir2 = sys.argv[2]

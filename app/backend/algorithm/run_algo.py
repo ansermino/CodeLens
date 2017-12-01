@@ -3,7 +3,7 @@ import algo
 import ast
 
 
-def start_algo(file1, file2, file3=None) -> float:
+def start_algo(file1, file2, file3=None) -> tuple:
     with open(file1) as f1:
         s1 = f1.read()
 
@@ -20,14 +20,17 @@ def start_algo(file1, file2, file3=None) -> float:
     else:
         result = algo.finalResult(tree1, tree2)
 
-    result = str(result)
+    first_lines = result[1]
+    second_lines = result[2]
+
+    result = str(result[0])
     result = float(result[:(result.find('.') + 5)])
 
     if result >= 0.5:
         print("PLAGIARISM DETECTED: {} and {}, with {}% confidence".format(file1, file2, (result * 100)))
     else:
         print("No plagiarism! The similarity is {}%".format(result * 100))
-    return result
+    return result, first_lines, second_lines
 
 if __name__ == "__main__":
 
