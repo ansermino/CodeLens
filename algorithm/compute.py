@@ -7,7 +7,7 @@ import psycopg2
 
 def run_algo_on_dirs(dir1, dir2):
     """
-    Runs the plagiarism checker on the files in the two directories.
+    Runs the plagiarism checker on all the files in the two directories.
     """
 
     dir1_files = os.listdir(dir1)
