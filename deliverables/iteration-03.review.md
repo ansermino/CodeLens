@@ -52,11 +52,9 @@ The database is involved in two sections of our backend: the routing (to feed da
 
 #### Goals and/or tasks that were planned but not met/completed:
 
- * From most to least important.
- * For each goal/task, explain why it was not met/completed.      
-   e.g. Did you change your mind, or did you just not get to it yet?
-* Full front end integration. We planned to connect all of the back end to the front end, however due to some delays, we only managed to integrate the core features.
-* Code viewer. The instructors were supposed to be able to see the detected similarities between code. However, we found the way to do it too late for this iteration.
+* Full front end integration. We planned to connect all of the back end to the front end, however due to some delays, we only managed to integrate the core features. We underestimated the difficulty of this task and it will be the focus of our final iteration.
+
+* Code viewer. The instructors were supposed to be able to see the detected similarities between code. However, we found the way to do it too late for this iteration. We should be able to implement this feature for the final iteration.
 
 
 ## Meeting Highlights
