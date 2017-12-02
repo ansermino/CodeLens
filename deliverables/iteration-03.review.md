@@ -2,7 +2,7 @@
 
 ## Iteration 3 - Review & Retrospect
 
- * When: Thursday, November 30, 2017
+ * When: November 30 & November 31
  * Where: Bahen Room 2270
 
 ## Process - Reflection
