@@ -39,7 +39,7 @@ The database is involved in two sections of our backend: the routing (to feed da
 
 #### Planned changes
 
-We are not making any changes to our process moving forward. We will treat the final week leading up to the demo as a final week-long sprint. We have already decided on the final features that we need to implement (listed below) and we will meet on Saturday (December 1) to discuss how to tackle these features. We plan to have one more group programming session (since we make a lot of progress with them) and one big demo session (to fix the kinks in our demo) prior to the final demo.
+We are not making any changes to our process moving forward. We will treat the final week leading up to the demo as a final week-long sprint. We have already decided on the final features that we need to implement (listed below) and we will meet on Saturday (December 2) to discuss how to tackle these features. We plan to have one more group programming session (since we make a lot of progress with them) and one big demo session (to fix the kinks in our demo) prior to the final demo.
 
 ## Product - Review
 
@@ -87,7 +87,7 @@ We couldn't complete the similarity viewer that would allow instructors to visua
 
 ## Meeting Highlights
 
-Going into the next iteration, our main insights are:
+Going into the final stretch, our main insights are:
 
 Put more time and effort into integrating the front end and back end of our project. During this iteration we found that integrating our back end and front end took longer than expected. We ran into unexpected issues with authentication and database queries. This taught us to allocate more time for the integration and not to underestimate its complexity.
 
