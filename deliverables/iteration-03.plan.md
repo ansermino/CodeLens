@@ -133,6 +133,6 @@ New mockup for the design of the landing page. The purpose of the new landing pa
 
 New mockup for the design of the login panel. Instead of having a new webpage for the login, we’re now using an overlay to better maximize the use of the screen real-estate.
 
-The image of the flow of how a assignment gets processed, from the moment it gets uploaded to the individual assignments being checked against each other. Allows each developer to clearly understand the flow of how each ‘assignment’ gets processed behind the scenes.
+[The image of the flow of how a assignment gets processed](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/user_flow.jpg?raw=true), from the moment it gets uploaded to the individual assignments being checked against each other. Allows each developer to clearly understand the flow of how each ‘assignment’ gets processed behind the scenes.
 
 Build the front-end component that will display the similarities between the files. This will allow us to visualize how this information gets displayed to the user and identify the key areas that we want to highlight/make it stand out.
