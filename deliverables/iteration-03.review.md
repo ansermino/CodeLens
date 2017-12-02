@@ -53,14 +53,25 @@ We finished most of our tasks this iteration. Here is our updated FreedCamp Kanb
 
 #### Goals and/or tasks that were met/completed:
 
+* Created the database
+
+We created the database to store account information as well as information (dates, student IDs, file hashes/locations, and plagiarism scores) collected from the all of the assignments created by and all the code submitted by the instructor. [Here is an image of the attributes we use for the database tables.](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/db.png?raw=true)
+
 * Integrated file uploads between back end and front end
+
+We have integrated the front end and back end to be able to upload files directly from the front end and store them on our server, unzip them, run the plagiarism algorithms to compute the plagiarism score, and show the scores to the instructor.
+
 * Redesigned the front end
+
+We redesigned the appearance of our website. We've also added a registration form so that potential users have to ability to create an account.
 
 ![New Front End](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts_deliverable_3/web_newhomepage.png?token=AORB-58gyXFE0EMyFw1_Mrp4aH7A5q5_ks5aK0IGwA%3D%3D)
 
 ![New Login](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts_deliverable_3/web_newloginpanel.png?token=AORB-xKt3ruwcXPk0ZkWIo1pJXQF2mlbks5aK0IKwA%3D%3D)
 
-* Set up the back end routes in anticipation of further integrating the rest of the back end and front end
+* Set up the back end routes for further integration of the back end and front end
+
+We still need to integrate more of the front end and back end but he have set up routes on the back end to handle requests from the user. Besides the file upload route that we've already integrated, we have back end routes set up for logging in, registering accounts, displaying all assignments that an instructor has created, displaying all submissions and scores of a given assignment, and displaying a list of highest similarity scores for a given assignment.
 
 #### Goals and/or tasks that were planned but not met/completed:
 
