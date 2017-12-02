@@ -56,7 +56,7 @@ Throughout this iteration, we’ll be having 5 meetings, and their purpose is to
   
 2. 26th November in Bahen 2270
 
-- In this meeting, we’ll be discussing about the tasks that were completed in this sprint, as well as performing peer code reviews to merge the completed tasks into the codebase. We’ll also be discussing about any feedback that other developers might have and integrating that feedback in the next sprint. This meeting also marks the ending point for our first sprint cycle, and will mark the starting point for our second sprint cycle.
+- In this meeting, we’ll be discussing about the tasks that were completed in this sprint, as well as performing peer code reviews to merge the completed tasks into the codebase. We’ll also be discussing about any feedback that other developers might have and integrating that feedback in the next sprint. This meeting also marks the ending point for our first sprint cycle, and will mark the starting point for our second sprint cycle. We plan to have a group programming session on this day.
   
 3. 28th November in Bahen 2270
 
