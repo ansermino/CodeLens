@@ -126,13 +126,12 @@ Have the ability to retrieve the lines and files that were detected to be simila
 
 #### Artifacts
 
-[Script](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/video_script.pdf) for the video that we’re producing to describe our project.
-The script allows us to get additional feedback before the creation of our video and allows us to recite the script for a smoother higher quality video.
-New mockup for the design of the landing page.
-The purpose of the new landing page is to better explain our product to new users and also allow users to easily login or register.
-New mockup for the design of the login panel.
-Instead of having a new webpage for the login, we’re now using an overlay to better maximize the use of the screen real-estate.
-The image of the flow of how a assignment gets processed, from the moment it gets uploaded to the individual assignments being checked against each other.
-Allows each developer to clearly understand the flow of how each ‘assignment’ gets processed behind the scenes.
-Build the front-end component that will display the similarities between the files. 
-This will allow us to visualize how this information gets displayed to the user and identify the key areas that we want to highlight/make it stand out.
+[Script](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/video_script.pdf) for the video that we’re producing to describe our project. The script allows us to get additional feedback before the creation of our video and allows us to recite the script for a smoother higher quality video.
+
+New mockup for the design of the landing page. The purpose of the new landing page is to better explain our product to new users and also allow users to easily login or register.
+
+New mockup for the design of the login panel. Instead of having a new webpage for the login, we’re now using an overlay to better maximize the use of the screen real-estate.
+
+The image of the flow of how a assignment gets processed, from the moment it gets uploaded to the individual assignments being checked against each other. Allows each developer to clearly understand the flow of how each ‘assignment’ gets processed behind the scenes.
+
+Build the front-end component that will display the similarities between the files. This will allow us to visualize how this information gets displayed to the user and identify the key areas that we want to highlight/make it stand out.
