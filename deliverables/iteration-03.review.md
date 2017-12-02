@@ -43,7 +43,16 @@ We are not making any changes to our process moving forward. We will treat the f
 
 ## Product - Review
 
+We finished most of our tasks this iteration. Here is our updated FreedCamp Kanban board:
+
+![Front End Task List](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/frontend-iteration3.png?raw=true)
+
+![Back End Task List](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/backend-iteration3.png?raw=true)
+
+![Algorithm Task List](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/algorithm-iteration3.png?raw=true)
+
 #### Goals and/or tasks that were met/completed:
+
 * Integrated file uploads between back end and front end
 * Redesigned the front end
 
