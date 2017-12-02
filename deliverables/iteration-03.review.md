@@ -46,6 +46,8 @@ The database is involved in two sections of our backend: the routing (to feed da
 * Redesigned the front end
 ![New Front End](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/web-newhomepage.png?token=AORB-5HIjnYGrwhT6JH4dVTr4avsIVhZks5aKzkMwA%3D%3D)
 
+![New Login](https://raw.githubusercontent.com/csc301-fall-2017/project-team-01/master/deliverables/artifacts/web_newloginpanel.png?token=AORB-1ZTMF_gSiphYWrIdCMaGdf-_HiSks5aKzpawA%3D%3D)
+
 * Set up the back end routes in anticipation of further integrating the rest of the back end and front end
 
 #### Goals and/or tasks that were planned but not met/completed:
