@@ -126,7 +126,7 @@ Have the ability to retrieve the lines and files that were detected to be simila
 
 #### Artifacts
 
-Script for the video that we’re producing to describe our project.
+[Script](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/video_script.pdf) for the video that we’re producing to describe our project.
 The script allows us to get additional feedback before the creation of our video and allows us to recite the script for a smoother higher quality video.
 New mockup for the design of the landing page.
 The purpose of the new landing page is to better explain our product to new users and also allow users to easily login or register.
