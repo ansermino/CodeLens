@@ -20,7 +20,7 @@ The first sprint will begin on the 21st of November to 26th of November lasting 
 At the end of this iteration, in order to determine if the use of sprints is successful, we will look at the percentage of sprint tasks completed or the percentage of tasks that were carried forward from one sprint to another.
 
 
-The next change that we’re making is ensuring that all commits are only done to branches other than master. This ensures that we maintain at least one branch that can be used as production-ready code, where code is thoroughly tested and reviewed, in addition this allows for each developer to work in their own isolated branch, so external changes do not impact their workflow. At the end of this iteration, there shouldn’t be anyone committing directly to master, instead branches are the only things being merged into 
+The next change that we’re making is ensuring that all commits are only done to branches other than master. This ensures that we maintain at least one branch that can be used as production-ready code, where code is thoroughly tested and reviewed, in addition this allows for each developer to work in their own isolated branch, so external changes do not impact their workflow. At the end of this iteration, there shouldn’t be anyone committing directly to master, instead branches with their own individual merge requests are the only things merged into the codebase. 
 
 #### Roles & responsibilities
 
@@ -56,7 +56,8 @@ Throughout this iteration, we’ll be having 5 meetings, and their purpose is to
   
 2. 26th November in Bahen 2270
 
-- In this meeting, we’ll be discussing about the tasks that were completed in this sprint, as well as performing peer code reviews to merge the completed tasks into the codebase. We’ll also be discussing about any feedback that other developers might have and integrating that feedback in the next sprint. This meeting also marks the ending point for our first sprint cycle, and will mark the starting point for our second sprint cycle. We plan to have a group programming session on this day.
+- In this meeting, we’ll be discussing about the tasks that were completed in this sprint, as well as performing peer code reviews to merge the completed tasks into the codebase. We’ll also be discussing about any feedback that other developers might have and integrating that feedback in the next sprint. 
+- This meeting also marks the ending point for our first sprint cycle, and will mark the starting point for our second sprint cycle. We plan to have a group programming session on this day.
   
 3. 28th November in Bahen 2270
 
@@ -69,7 +70,7 @@ Throughout this iteration, we’ll be having 5 meetings, and their purpose is to
 5. 1st December in Bahen 5206
     
 - In this meeting, we’ll be checking off the tasks that were completed and also peer reviewing each merge request and providing feedback and creating tasks that need to be completed before we present our final demo.
-This meeting marks the end of our second sprint cycle.
+- This meeting marks the end of our second sprint cycle.
 
 Because the goal of this iteration is also to prevent people from pushing directly onto master we’re going to be using Github to host our code review discussions. Once a merge request is opened, another fellow developer is assigned to review the code and initiate the discussion. The goal is to resolve a merge request and have it merged within 48 hours. If there are any outstanding issues they’ll be resolved in person during one of the meetings.
 
@@ -79,16 +80,20 @@ We’ll be making the following artifacts to aid in our planning process.
 
 Freedcamp Tasks
 
-We’ll be using Freedcamp’s Task Board to track tasks between members. In addition to tracking high level tasks from the previous iterations, we’ve added more fine-grained tracking for lower level tasks as we’ve completed the majority of the high level ones.
-As before, we’ll be assigning priorities to the lower level tasks. As these tasks are much smaller, we’ll need to do this more regularly than just once as per the high level tasks. As a team, we’ll decide who wants to do which task. Each task will be assigned to the team responsible for that portion (front-end, back-end, algorithm). However, cross-team work is also encouraged as some people are more passionate about specific aspects. We found our previous iterations method of deciding the priorities to be effective where each of our member has a vote to say if they think it should be prioritized. The levels of each issue will depend on the number of votes from the team.
+- We’ll be using Freedcamp’s Task Board to track tasks between members. In addition to tracking high level tasks from the previous iterations, we’ve added more fine-grained tracking for lower level tasks as we’ve completed the majority of the high level ones.
+- As before, we’ll be assigning priorities to the lower level tasks. As these tasks are much smaller, we’ll need to do this more regularly than just once as per the high level tasks. 
+- As a team, we’ll decide who wants to do which task. Each task will be assigned to the team responsible for that portion (front-end, back-end, algorithm). However, cross-team work is also encouraged as some people are more passionate about specific aspects. 
+- We found our previous iterations method of deciding the priorities to be effective where each of our member has a vote to say if they think it should be prioritized. The levels of each issue will depend on the number of votes from the team.
 
 Github Issues
 
-Bugs will be posted to Github issues. Once a task is completed, and a bug is found, instead of creating a task to fix the bug, a Github issue will be created instead. This allows us to work directly on Github instead of using third party applications. This also allows for specific issues to have branches dedicated for them, and we can close the issue along with branch merging in one action.
+- Bugs will be posted to Github issues. Once a task is completed, and a bug is found, instead of creating a task to fix the bug, a Github issue will be created instead. This allows us to work directly on Github instead of using third party applications. 
+- This also allows for specific issues to have branches dedicated for them, and we can close the issue along with branch merging in one action.
 
 Whiteboard
 
-Whiteboarding worked well previously and allowed us to rapidly present, share, and modify design decisions. We’ll be using whiteboards extensively to show how pages flow, form design, and general website layout. Whiteboarding will mostly occur in the early stages of the meeting as we present our ideas. Once we’ve had a whiteboard session, we’re reading to start designing required functionality.
+- Whiteboarding worked well previously and allowed us to rapidly present, share, and modify design decisions. We’ll be using whiteboards extensively to show how pages flow, form design, and general website layout. 
+- Whiteboarding will mostly occur in the early stages of the meeting as we present our ideas. Once we’ve had a whiteboard session, we’re reading to start designing required functionality.
 
 #### Git / GitHub workflow
 
@@ -116,23 +121,28 @@ For points 1-3, the ability to retrieve the information is already implemented o
 
 For points 4-6, the ability to authenticate, register and maintain sessions are all supported by the backend and the frontend has the views to support the functionality, however they aren’t linked.
 
-Pipe information from the backend submissions and display all submissions on the frontend.
-Pipe information from the backend plagiarism results and display them when the user wishes to view all comparisons. 
-Pipe information from the backend assignments and display all 
-Implement the ability to maintain sessions on the frontend.
-Implement the ability to authenticate on the frontend.
-Implement the ability to register a new user on the frontend.
-Track the similarities between the files during a comparison operation and store the lines where the similarities occur in either files.
-Have the ability to retrieve the lines and files that were detected to be similar, and show them on the frontend
+1. Pipe information from the backend submissions and display all submissions on the frontend.
+2. Pipe information from the backend plagiarism results and display them when the user wishes to view all comparisons. 
+3. Pipe information from the backend assignments and display all 
+4. Implement the ability to maintain sessions on the frontend.
+5. Implement the ability to authenticate on the frontend.
+6. Implement the ability to register a new user on the frontend.
+7. Track the similarities between the files during a comparison operation and store the lines where the similarities occur in either files.
+8. Have the ability to retrieve the lines and files that were detected to be similar, and show them on the frontend
 
 #### Artifacts
 
-[Script](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/video_script.pdf) for the video that we’re producing to describe our project. The script allows us to get additional feedback before the creation of our video and allows us to recite the script for a smoother higher quality video.
+1. [Script](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/video_script.pdf) for the video that we’re producing to describe our project. 
+- The script allows us to get additional feedback before the creation of our video and allows us to recite the script for a smoother higher quality video.
 
-New mockup for the design of the landing page. The purpose of the new landing page is to better explain our product to new users and also allow users to easily login or register.
+2. New mockup for the design of the landing page. 
+- The purpose of the new landing page is to better explain our product to new users and also allow users to easily login or register.
 
-New mockup for the design of the login panel. Instead of having a new webpage for the login, we’re now using an overlay to better maximize the use of the screen real-estate.
+3. New mockup for the design of the login panel. 
+- Instead of having a new webpage for the login, we’re now using an overlay to better maximize the use of the screen real-estate.
 
-[The image of the flow of how a assignment gets processed](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/user_flow.jpg?raw=true), from the moment it gets uploaded to the individual assignments being checked against each other. Allows each developer to clearly understand the flow of how each ‘assignment’ gets processed behind the scenes.
+4. [The image of the flow of how a assignment gets processed](https://github.com/csc301-fall-2017/project-team-01/blob/master/deliverables/artifacts_deliverable_3/user_flow.jpg?raw=true), from the moment it gets uploaded to the individual assignments being checked against each other. 
+- Allows each developer to clearly understand the flow of how each ‘assignment’ gets processed behind the scenes.
 
-Build the front-end component that will display the similarities between the files. This will allow us to visualize how this information gets displayed to the user and identify the key areas that we want to highlight/make it stand out.
+5. Build the front-end component that will display the similarities between the files. 
+- This will allow us to visualize how this information gets displayed to the user and identify the key areas that we want to highlight/make it stand out.
