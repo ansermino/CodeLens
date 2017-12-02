@@ -55,17 +55,24 @@ Every member in our group takes on this role, ensuring that every merge request 
 
 Throughout this iteration, we’ll be having 5 meetings, and their purpose is to help identify tasks for each sprint and providing feedback at the end of each sprint cycle. The meetings also allow us to clear any misconceptions and difficulties that any developer is facing. The following are the planned dates and locations for the meetings.
 
- 21st November in Bahen 2270
-In the first meeting for this iteration, we’ll be identifying what issues we will be resolving from the backend and who will partake in connecting the frontend with the backend.
-This meeting also marks the starting point for our first sprint cycle.
- 26th November in Bahen 2270
-In this meeting, we’ll be discussing about the tasks that were completed in this sprint, as well as performing peer code reviews to merge the completed tasks into the codebase. We’ll also be discussing about any feedback that other developers might have and integrating that feedback in the next sprint.
-This meeting also marks the ending point for our first sprint cycle, and will mark the starting point for our second sprint cycle.
-28th November in Bahen 2270
+1. 21st November in Bahen 2270
+
+In the first meeting for this iteration, we’ll be identifying what issues we will be resolving from the backend and who will partake in connecting the frontend with the backend.This meeting also marks the starting point for our first sprint cycle.
+  
+2. 26th November in Bahen 2270
+
+In this meeting, we’ll be discussing about the tasks that were completed in this sprint, as well as performing peer code reviews to merge the completed tasks into the codebase. We’ll also be discussing about any feedback that other developers might have and integrating that feedback in the next sprint. This meeting also marks the ending point for our first sprint cycle, and will mark the starting point for our second sprint cycle.
+  
+3. 28th November in Bahen 2270
+
 In this meeting, we’ll be discussing about any problems that we’re facing, this meeting will primarily serve as a mid-sprint meeting. 
-30th November in Bahen 2270
+  
+4.30th November in Bahen 2270
+
 In this meeting, we’ll be having a final code session before the end of second sprint.
-1st December in Bahen 5206
+  
+5.1st December in Bahen 5206
+    
 In this meeting, we’ll be checking off the tasks that were completed and also peer reviewing each merge request and providing feedback and creating tasks that need to be completed before we present our final demo.
 This meeting marks the end of our second sprint cycle.
 
