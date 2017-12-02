@@ -7,7 +7,6 @@
 
 ## Process
 
-
 Quick introduction
 
 During this iteration, we intend to link the frontend and the backend, in addition we intend to polish the components that we created in iteration 2. By polishing the product we’re ensuring that any outstanding issues gets fixed in this iteration as well as any necessary refactoring of code to loosen the dependency.
@@ -22,7 +21,6 @@ At the end of this iteration, in order to determine if the use of sprints is suc
 
 
 The next change that we’re making is ensuring that all commits are only done to branches other than master. This ensures that we maintain at least one branch that can be used as production-ready code, where code is thoroughly tested and reviewed, in addition this allows for each developer to work in their own isolated branch, so external changes do not impact their workflow. At the end of this iteration, there shouldn’t be anyone committing directly to master, instead branches are the only things being merged into 
-
 
 #### Roles & responsibilities
 
@@ -48,37 +46,32 @@ Every member in our group takes on this role, ensuring that every merge request 
 
   The video engineers are tasked to create the video and ensure that our product gets presented in easily understandable format. First they write the script for the demo. After that they record the audio for the demo. They also create and edit the footage. 
 
-
 #### Events
-
-
 
 Throughout this iteration, we’ll be having 5 meetings, and their purpose is to help identify tasks for each sprint and providing feedback at the end of each sprint cycle. The meetings also allow us to clear any misconceptions and difficulties that any developer is facing. The following are the planned dates and locations for the meetings.
 
 1. 21st November in Bahen 2270
 
-In the first meeting for this iteration, we’ll be identifying what issues we will be resolving from the backend and who will partake in connecting the frontend with the backend.This meeting also marks the starting point for our first sprint cycle.
+- In the first meeting for this iteration, we’ll be identifying what issues we will be resolving from the backend and who will partake in connecting the frontend with the backend.This meeting also marks the starting point for our first sprint cycle.
   
 2. 26th November in Bahen 2270
 
-In this meeting, we’ll be discussing about the tasks that were completed in this sprint, as well as performing peer code reviews to merge the completed tasks into the codebase. We’ll also be discussing about any feedback that other developers might have and integrating that feedback in the next sprint. This meeting also marks the ending point for our first sprint cycle, and will mark the starting point for our second sprint cycle.
+- In this meeting, we’ll be discussing about the tasks that were completed in this sprint, as well as performing peer code reviews to merge the completed tasks into the codebase. We’ll also be discussing about any feedback that other developers might have and integrating that feedback in the next sprint. This meeting also marks the ending point for our first sprint cycle, and will mark the starting point for our second sprint cycle.
   
 3. 28th November in Bahen 2270
 
-In this meeting, we’ll be discussing about any problems that we’re facing, this meeting will primarily serve as a mid-sprint meeting. 
+- In this meeting, we’ll be discussing about any problems that we’re facing, this meeting will primarily serve as a mid-sprint meeting. 
   
-4.30th November in Bahen 2270
+4. 30th November in Bahen 2270
 
-In this meeting, we’ll be having a final code session before the end of second sprint.
+- In this meeting, we’ll be having a final code session before the end of second sprint.
   
-5.1st December in Bahen 5206
+5. 1st December in Bahen 5206
     
-In this meeting, we’ll be checking off the tasks that were completed and also peer reviewing each merge request and providing feedback and creating tasks that need to be completed before we present our final demo.
+- In this meeting, we’ll be checking off the tasks that were completed and also peer reviewing each merge request and providing feedback and creating tasks that need to be completed before we present our final demo.
 This meeting marks the end of our second sprint cycle.
 
 Because the goal of this iteration is also to prevent people from pushing directly onto master we’re going to be using Github to host our code review discussions. Once a merge request is opened, another fellow developer is assigned to review the code and initiate the discussion. The goal is to resolve a merge request and have it merged within 48 hours. If there are any outstanding issues they’ll be resolved in person during one of the meetings.
-
-
 
 #### Artifacts
 
@@ -96,9 +89,7 @@ Whiteboard
 Whiteboarding worked well previously and allowed us to rapidly present, share, and modify design decisions. We’ll be using whiteboards extensively to show how pages flow, form design, and general website layout.
 Whiteboarding will mostly occur in the early stages of the meeting as we present our ideas. Once we’ve had a whiteboard session, we’re reading to start designing required functionality.
 
-
 #### Git / GitHub workflow
-
 
 Our GitHub workflow remains the same from iteration 2, however in this iteration we’re pushing to ensure that the master branch is protected, that is to say that no individual should be pushing directly to master and branches are the only ones being merged into the master codebase. 
 
@@ -112,12 +103,9 @@ Once the changes have been made to address the comments, the reviewer can have a
 
 The reason why we chose this workflow is that it maps each issue to a relevant pull request and allows us keep track of any discussions. So that in the future, if we need to refactor code or perform a code migration we can take note of any design decisions that we made during the initial implementation.
 
-
-
 ## Product
 
 #### Goals and tasks
-
 
 The goal for this iteration is to link the frontend of the application with the backend, which completes our minimal viable product. In addition we will be fixing any outstanding issues that were created during iteration 2 and incorporating any feedback to improve our product. 
 
@@ -136,9 +124,7 @@ Implement the ability to register a new user on the frontend.
 Track the similarities between the files during a comparison operation and store the lines where the similarities occur in either files.
 Have the ability to retrieve the lines and files that were detected to be similar, and show them on the frontend
 
-
 #### Artifacts
-
 
 Script for the video that we’re producing to describe our project.
 The script allows us to get additional feedback before the creation of our video and allows us to recite the script for a smoother higher quality video.
@@ -150,5 +136,3 @@ The image of the flow of how a assignment gets processed, from the moment it get
 Allows each developer to clearly understand the flow of how each ‘assignment’ gets processed behind the scenes.
 Build the front-end component that will display the similarities between the files. 
 This will allow us to visualize how this information gets displayed to the user and identify the key areas that we want to highlight/make it stand out.
-
-
