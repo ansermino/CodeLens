@@ -26,25 +26,25 @@ The next change that we’re making is ensuring that all commits are only done t
 
 #### Roles & responsibilities
 
-Front-end Developer (David Ansermino, Ivan Topolcic)
+**Front-end Developer (David Ansermino, Ivan Topolcic)**
 
   The responsibility of the front-end developer is to design and build the interface. In our case the website that our users will interact with. With respect to our minimal viable product, how the flow of creating an assignment works and how we should display meaningful information obtained from the backend to our user.
 
-Back-end Developers (Daniel Chan, Patrick Gronowski)
+**Back-end Developers (Daniel Chan, Patrick Gronowski)**
 
   The responsibility of the developers in this group is to architect and build the infrastructure that allows the interactions on the front end to be processed. In this phase, they’ll be responsible for setting up the server, the relevant routes that will transmit data between the client and the server.
 
-Code Reviewer (All)
+**Code Reviewer (All)**
 
   The code reviewer(s) are responsible for ensuring that quality code gets committed to the codebase, that is to say they are the last line of defence in preventing “bad” code. They should ensure that the code that they’re reviewing follows proper style guides and ensure that the logic of the code is sound.
 
 Every member in our group takes on this role, ensuring that every merge request is reviewed by at least one other individual.
 
-Plagiarism Algorithm Developers (Ihor Veselovskyy, Frank Karunaratna)
+**Plagiarism Algorithm Developers (Ihor Veselovskyy, Frank Karunaratna)**
 
   The responsibility of the developers in this group is to build an algorithm that will detect similarities between two sets of code. Starting with detecting similarity between pieces of code that are exactly the same. Then move on to detect similarities between two pieces of code where things like variable names, function names and class names have been changed. Add weights to the similarities that have been found so that a percentage of similarity can be given to the user. Use the AST to detect functionally similar code regardless of whitespace and comments.
 
-Video Engineers (David Ansermino, Ivan Toplocic, Frank Karunaratna)
+**Video Engineers (David Ansermino, Ivan Toplocic, Frank Karunaratna)**
 
   The video engineers are tasked to create the video and ensure that our product gets presented in easily understandable format. First they write the script for the demo. After that they record the audio for the demo. They also create and edit the footage. 
 
