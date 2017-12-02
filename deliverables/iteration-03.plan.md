@@ -78,16 +78,17 @@ Because the goal of this iteration is also to prevent people from pushing direct
 We’ll be making the following artifacts to aid in our planning process. 
 
 Freedcamp Tasks
+
 We’ll be using Freedcamp’s Task Board to track tasks between members. In addition to tracking high level tasks from the previous iterations, we’ve added more fine-grained tracking for lower level tasks as we’ve completed the majority of the high level ones.
-As before, we’ll be assigning priorities to the lower level tasks. As these tasks are much smaller, we’ll need to do this more regularly than just once as per the high level tasks.
-As a team, we’ll decide who wants to do which task. Each task will be assigned to the team responsible for that portion (front-end, back-end, algorithm). However, cross-team work is also encouraged as some people are more passionate about specific aspects. 
-We found our previous iterations method of deciding the priorities to be effective where each of our member has a vote to say if they think it should be prioritized. The levels of each issue will depend on the number of votes from the team.
+As before, we’ll be assigning priorities to the lower level tasks. As these tasks are much smaller, we’ll need to do this more regularly than just once as per the high level tasks. As a team, we’ll decide who wants to do which task. Each task will be assigned to the team responsible for that portion (front-end, back-end, algorithm). However, cross-team work is also encouraged as some people are more passionate about specific aspects. We found our previous iterations method of deciding the priorities to be effective where each of our member has a vote to say if they think it should be prioritized. The levels of each issue will depend on the number of votes from the team.
+
 Github Issues
-Bugs will be posted to Github issues. Once a task is completed, and a bug is found, instead of creating a task to fix the bug, a Github issue will be created instead. This allows us to work directly on Github instead of using third party applications.
-This also allows for specific issues to have branches dedicated for them, and we can close the issue along with branch merging in one action.
+
+Bugs will be posted to Github issues. Once a task is completed, and a bug is found, instead of creating a task to fix the bug, a Github issue will be created instead. This allows us to work directly on Github instead of using third party applications. This also allows for specific issues to have branches dedicated for them, and we can close the issue along with branch merging in one action.
+
 Whiteboard
-Whiteboarding worked well previously and allowed us to rapidly present, share, and modify design decisions. We’ll be using whiteboards extensively to show how pages flow, form design, and general website layout.
-Whiteboarding will mostly occur in the early stages of the meeting as we present our ideas. Once we’ve had a whiteboard session, we’re reading to start designing required functionality.
+
+Whiteboarding worked well previously and allowed us to rapidly present, share, and modify design decisions. We’ll be using whiteboards extensively to show how pages flow, form design, and general website layout. Whiteboarding will mostly occur in the early stages of the meeting as we present our ideas. Once we’ve had a whiteboard session, we’re reading to start designing required functionality.
 
 #### Git / GitHub workflow
 
