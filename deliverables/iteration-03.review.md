@@ -7,7 +7,7 @@
 
 ## Process - Reflection
 
-(Optional) Short introduction
+Our process was mainly the same as our last iteration. Some of the changes that we implemented were having two meetings per week, doing pair programming, and doing group code reviews. There were varying degrees of success for each of these additions (discussed below). 
 
 #### Decisions that turned out well
 
@@ -19,13 +19,12 @@ On many occasion we had group programming sessions. These sessions allowed us to
 
 To hold ourselves more accountable we decided to split this iteration up into sprints. This turned out to be a really good decision for our group. It goes without saying that we should have started the project off like that. The two 5-day sprints we did helped us build the code more incrementally. We made a lot of progress in the first sprint, which When we met to do the It allowed us to make small goals that were easily achievable. These small goals kept us engaged and on track for the deliverable. Unlike the last deliverable where we did very little until the end of the deliverable, due to having large goals and not splitting them up into smaller tasks.
 
-
-
 * Group code review
 
 Having group code reviews was a good decision for our team. They forced our team to write clean, reable code. This is very important when working in a team because it ensures that all team members understand the code. The code reviews also forced us have a consistent coding style which also contributed to the readability of the code. Without our group code reviews our code would have been much more messy and would have been very confusing to someone not in our group.
 
 * Pair Programming
+
 Similar to the group programming sessions, the pair programming sessions allowed us to have instant feedback on our code. We mostly did our pair programming sessions with people from the same team (eg. Frontend, Backend, Algorithm). This was because people on the same team have the best idea of the codebase for that team.
 
 #### Decisions that did not turn out as well as we hoped
