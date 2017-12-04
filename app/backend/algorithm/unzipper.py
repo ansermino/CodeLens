@@ -1,7 +1,8 @@
 import zipfile
 import sys
 
-def unzp(dir_zip, destination=None) -> list:
+
+def unzp(dir_zip: str, destination: str = None) -> list:
     """
     Unzip the archive of directories
     :param dir_zip: location of the directories archive
@@ -25,7 +26,7 @@ if __name__ == "__main__":
 
     if len(sys.argv) != 2:
         print("Usage: unziper.py dir")
-        sys.exit();
+        sys.exit()
 
     dir1 = sys.argv[1]
 
