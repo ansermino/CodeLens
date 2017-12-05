@@ -9,12 +9,14 @@ module.exports = {
       Example:
       return queryInterface.createTable('users', { id: Sequelize.INTEGER });
     */
-    queryInterface.addColumn('assignments', 'instructor_id', {
-      type: Sequelize.INTEGER,
-      references: {
-        model: 'users',
-        key: 'id'
-      }
+
+
+    queryInterface.addColumn('plagiarism_tuples', 'lines_1', {
+      type: Sequelize.ARRAY(Sequelize.INTEGER)
+    });
+
+    queryInterface.addColumn('plagiarism_tuples', 'lines_2', {
+      type: Sequelize.ARRAY(Sequelize.INTEGER)
     });
   },
 
@@ -26,6 +28,8 @@ module.exports = {
       Example:
       return queryInterface.dropTable('users');
     */
-    queryInterface.removeColumn('assignments', 'instructor_id');
+    queryInterface.removeColumn('plagiarism_tuples', 'lines_1');
+
+    queryInterface.removeColumn('plagiarism_tuples', 'lines_2');
   }
 };

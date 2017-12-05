@@ -1,9 +1,12 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var plagiarism_tuples = sequelize.define('plagiarism_tuples', {
-    student_a: DataTypes.INTEGER,
-    student_b: DataTypes.INTEGER,
-    plagiarism_score: DataTypes.INTEGER
+    submission_a: DataTypes.INTEGER,
+    submission_b: DataTypes.INTEGER,
+    plagiarism_score: DataTypes.INTEGER,
+    assignment_id: DataTypes.INTEGER,
+    lines_1: DataTypes.ARRAY(DataTypes.INTEGER),
+    lines_2: DataTypes.ARRAY(DataTypes.INTEGER)
   }, {
     classMethods: {
       associate: function(models) {
