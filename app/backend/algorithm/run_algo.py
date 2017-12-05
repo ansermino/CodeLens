@@ -3,7 +3,7 @@ import algo
 import ast
 
 
-def start_algo(file1, file2, file3=None) -> tuple:
+def start_algo(file1: str, file2: str, file3: str = None) -> tuple:
     with open(file1) as f1:
         s1 = f1.read()
 
@@ -38,7 +38,7 @@ if __name__ == "__main__":
         print('Usage: run_algo.py file1.py file2.py starter.py')
         sys.exit()
 
-    file1 = sys.argv[1]
-    file2 = sys.argv[2]
+    filee1 = sys.argv[1]
+    filee2 = sys.argv[2]
     starter = sys.argv[3]
-    start_algo(file1, file2, starter)
+    start_algo(filee1, filee2, starter)
