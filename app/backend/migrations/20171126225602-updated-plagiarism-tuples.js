@@ -26,5 +26,6 @@ module.exports = {
       Example:
       return queryInterface.dropTable('users');
     */
+    queryInterface.removeColumn('plagiarism_tuples', 'assignment_id');
   }
 };
