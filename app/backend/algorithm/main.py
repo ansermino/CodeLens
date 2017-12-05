@@ -24,4 +24,5 @@ if __name__ == "__main__":
         for subm2 in submissions:
             run_algo_on_dirs(subm1, subm2, assignment_id, starter_subm)
 
-    # shutil.rmtree("temp_dir")
+    shutil.rmtree("temp")
+    shutil.rmtree("temp1")

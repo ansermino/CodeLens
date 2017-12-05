@@ -31,7 +31,7 @@ def run_algo_on_dirs(dir1: str, dir2: str, assignment_id: int, starter: str = No
         sys.exit()
 
     # Connect to the db
-    conn = psycopg2.connect("dbname=plagiarism user=csc301 password=team01")
+    conn = psycopg2.connect("dbname=plagiarism user=igor password=testpass")
     cur = conn.cursor()
     plag = ()
 
@@ -46,12 +46,14 @@ def run_algo_on_dirs(dir1: str, dir2: str, assignment_id: int, starter: str = No
         dir1_file_path = "./" + dir1 + "/" + dir1_files[x]
         dir2_file_path = "./" + dir2 + "/" + dir2_files[x]
 
+        id1 = os.path.basename(os.path.normpath(dir1))
+        id2 = os.path.basename(os.path.normpath(dir2))
         plag = start_algo(dir1_file_path, dir2_file_path, starter_file_path)
         cur.execute("""INSERT INTO public.plagiarism_tuples (submission_a, submission_b,
-                    plagiarism_score, assignment_id, lines1, lines2, \"createdAt\", \"updatedAt\")
+                    plagiarism_score, assignment_id, lines_1, lines_2, \"createdAt\", \"updatedAt\")
                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s);
                     """,
-                    (dir1_files[x], dir2_files[x], plag[0] * 100, assignment_id, plag[1], plag[2],
+                    (id1, id2, plag[0] * 100, assignment_id, plag[1], plag[2],
                      "NOW()", "NOW()"))
 
     conn.commit()
