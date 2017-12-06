@@ -14,14 +14,14 @@ router.get('/all', function(req, res) {
 	});
 });
 
-router.get('/:id/results', function(req, res) {
+router.get('/:assignment_id/results', function(req, res) {
 	Results.findAll({
 		where: {
-			assignment_id: req.params.id,
+			assignment_id: req.params.assignment_id,
 		},
 		attributes: ['id', 'submission_a', 'submission_b', 'plagiarism_score']
 	}).then(results => {
-    let compare = function(a,b) {
+		let compare = function(a,b) {
 			if (a.plagiarism_score < b.plagiarism_score)
 				return 1;
 			if (a.plagiarism_score > b.plagiarism_score)
@@ -33,19 +33,19 @@ router.get('/:id/results', function(req, res) {
 });
 
 const assignmentFiles = upload.fields([
-  {name: 'assignments', maxCount: 1},
-  {name: 'starter', maxCount: 1}]
+	{name: 'assignments', maxCount: 1},
+	{name: 'starter', maxCount: 1}]
 );
 router.post('/create', assignmentFiles, function (req, res, next) {
 
 	console.log(req.files);
 	console.log(req.body);
 
-  if (!req.files['assignments'] || !req.files['starter'] ||
-      !req.body.plagiarism_threshold || req.body.plagiarism_threshold < 0 ||
-      req.body.plagiarism_threshold > 100) {
-    return res.sendStatus(400);
-  }
+	if (!req.files['assignments'] || !req.files['starter'] ||
+	!req.body.plagiarism_threshold || req.body.plagiarism_threshold < 0 ||
+	req.body.plagiarism_threshold > 100) {
+		return res.sendStatus(400);
+	}
 
   Assignments.create({
     title: req.body.title,
@@ -62,18 +62,7 @@ router.post('/create', assignmentFiles, function (req, res, next) {
 });
 
 router.get('/create', function (req, res) {
-  res.render('create-assignments');
-});
-
-router.get('/submissions/:id', function(req, res) {
-	Submissions.findAll({
-		where: {
-			assignment_id: req.params.id,
-		},
-		attributes: ['id', 'student_id']
-	}).then(submissions => {
-		res.json(submissions);
-	})
+	res.render('create-assignments');
 });
 
 module.exports = router;

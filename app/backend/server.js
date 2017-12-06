@@ -4,6 +4,7 @@ const port = process.env.PORT || 3000;
 const models = require('./models');
 const authentication = require('./routes/api_authentication');
 const assignments = require('./routes/api_assignments');
+const submissions = require('./routes/api_submissions');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const passport = require('passport');
@@ -39,6 +40,7 @@ app.set('view engine', 'ejs');
 app.use(authentication);
 app.use('/api/assignments', assignments);
 app.use(testViews);
+app.use('/api', submissions);
 
 models.sequelize.sync().then(() => {
   console.log("Database connection successfully established.");
