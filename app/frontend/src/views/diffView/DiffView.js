@@ -32,32 +32,66 @@ const style = {
   }
 }
 
+var submissionA = ''
+var submissionB= ''
+var codeA = 'sddsfds'
+var codeB = ''
 const sampleA = "\ndef merge(left, right):\n\tif notsdfsdfsd len(left) or not len(right):\n\t\treturn left or right\n\n\tresult = []\n\ti, j = 0, 0\n\twhile (len(result) < len(left) + len(right)):\n\t\tif left[i] < right[j]:\n\t\t\tresult.append(left[i])\n\t\t\ti+= 1\n\t\telse:\n\t\t\tresult.append(right[j])\n\t\t\tj+= 1\n\t\tif i == len(left) or j == len(right):\n\t\t\tresult.extend(left[i:] or right[j:])\n\t\t\tbreak \n\n\treturn result\n\ndef mergesort(list):\n\tif len(list) < 2:\n\t\treturn list\n\n\tmiddle = len(list)\/2\n\tleft = mergesort(list[:middle])\n\tright = mergesort(list[middle:])\n\nreturn merge(left, right)"
 const sampleB = "\ndef merge(left, right):\n\tif not len(left) or not len(right):\n\t\treturn left or right\n\n\tresult = []\n\ti, j = 0, 0\n\twhile (len(result) < len(left) + len(right)):\n\t\tif left[i] < right[j]:\n\t\t\tresult.append(left[i])\n\t\t\ti+= 1\n\t\telse:\n\t\t\tresult.append(right[j])\n\t\t\tj+= 1\n\t\tif i == len(left) or j == len(right):\n\t\t\tresult.extend(left[i:] or right[j:])\n\t\t\tbreak \n\n\treturn result\n\ndef mergesort(list):\n\tif len(list) < 2:\n\t\treturn list\n\n\tmiddle = len(list)\/2\n\tleft = mergesort(list[:middle])\n\tright = mergesort(list[middle:])\n\nreturn merge(left, right)"
 
 const createDiff = (code, lines) => {
+  code = code.toString()
   lines = lines.reverse()
   var codeSplit = code.split('\n')
   var nextLine= lines.pop();
-
   for(var i = 0; i < codeSplit.length; i++){
     if((i + 1) !== nextLine){
-      console.log((i + 1) + ' != ' + nextLine )
       codeSplit[i] = '#' + codeSplit[i]
     }
     else{
       nextLine = lines.pop()
-      console.log(nextLine)
     }
   }
-
   return codeSplit.join('\n');
 }
+
+const getSubmissionInfo = (assignment_id, submission_a, submission_b) => new Promise((resolves, rejects) => {
+  const url = process.env.REACT_APP_BASE_URL + '/api/assignments/diff/' + assignment_id + '/' + submission_a + '/' + submission_b + '/'
+  console.log(url)
+  const request = new XMLHttpRequest()
+  request.open('GET', url)
+  request.onload = () => resolves(JSON.parse(request.response.toString()))
+  request.onerror = (err) => rejects(err)
+  request.send()
+});
 
 class DiffView extends React.Component{
   constructor(props){
     super(props)
-    this.state = {value: 1}
+    this.state = {assignments: {}, codeA: '', codeB: ''}
+    // this.getPlagiarismInfo = this.getPlagiarismInfo.bind(this)
+  }
+  componentWillMount(){
+    console.log(this.props.match.params.assignment_id)
+    getSubmissionInfo(this.props.match.params.assignment_id, this.props.match.params.submission_a, this.props.match.params.submission_b).then((data)=>{
+      console.log("QUERY RESPONSE")
+      console.log(data);
+      let a = createDiff(data.submission_a, data.lines_1)
+      let b = createDiff(data.submission_b, data.lines_2)
+      this.setState({assignments: data, codeA: data.text_1, codeB: data.text_2, submissionA: a, submissionB: b}, () => {
+        console.log(this.state)
+        
+        codeA = data.text_1
+        codeB = data.text_2
+        submissionA = data.submission_a
+        submissionB = data.submission_b
+        this.render()
+      })
+      
+      // console.log(sampleData)
+    }, (error)=>{
+      console.log(error)
+    })
   }
   render(){
     return(
@@ -65,21 +99,15 @@ class DiffView extends React.Component{
         <div></div>
         <div style={style.columnDiv}>
           <div></div>
-          <DropDownMenu value={this.state.value} style={style.dropdown} anchorOrigin={{ vertical: 'bottom', horizontal: 'left'}} menuItemStyle={style.menuItem} autoWidth={false}>
-            <MenuItem value={1} primaryText="1000256368   78%" />
-            <MenuItem value={2} primaryText="1000125368   62%" />
-            <MenuItem value={3} primaryText="1000125789   57%" />
-            <MenuItem value={4} primaryText="1000365471   31%" />
-            <MenuItem value={5} primaryText="1000125478   29%" />
-          </DropDownMenu>
+          <div></div>
           <Paper style={style.paper}>
-            <h3 style={style.studentID}>1000889247</h3>
-            <SyntaxHighlighter language='python' style={docco} showLineNumbers="true">{createDiff(sampleA, [1,3,5])}</SyntaxHighlighter>
+            <h3 style={style.studentID}>{this.state.submissionA}</h3>
+            <SyntaxHighlighter language='python' style={docco} showLineNumbers="true">{this.state.codeA}</SyntaxHighlighter>
           </Paper>
 
           <Paper style={style.paper}>
-            <h3 style={style.studentID}>1000265789</h3>
-            <SyntaxHighlighter language='python' style={docco} showLineNumbers="true">{createDiff(sampleB, [1,5,9,11,15])}</SyntaxHighlighter>
+            <h3 style={style.studentID}>{this.state.submissionB}</h3>
+            <SyntaxHighlighter language='python' style={docco} showLineNumbers="true">{this.state.codeB}</SyntaxHighlighter>
           </Paper>
         </div>
         <div></div>

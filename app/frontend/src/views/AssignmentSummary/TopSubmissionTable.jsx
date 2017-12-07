@@ -69,7 +69,7 @@ class TopSubmissionTable extends React.Component{
                 <TableRowColumn style={style.table}>{item.submission_a}</TableRowColumn>
                 <TableRowColumn style={style.table}>{item.submission_b}</TableRowColumn>
                 <TableRowColumn style={style.table}>{item.plagiarism_score}%</TableRowColumn>
-                <TableRowColumn><Link to="/diff" ><FlatButton label="View" /></Link></TableRowColumn>
+                <TableRowColumn><Link to={"/diff/" +  this.props.assignment_id + '/' + item.submission_a + '/' + item.submission_b}><FlatButton label="View" /></Link></TableRowColumn>
               </TableRow>
             )
           })}

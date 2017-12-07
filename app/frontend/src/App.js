@@ -16,7 +16,7 @@ class App extends Component {
         <Header />
           <Switch>
             <Route path="/create" component={CreateAssignment}/>
-            <Route path="/diff/:assignment_id" component={DiffView}/>
+            <Route path="/diff/:assignment_id/:submission_a/:submission_b" component={DiffView}/>
             <Route exact path="/user-landing" component={UserLanding}/>
             {/* TODO: Remove these, purely for easy testing */}
             <Route path="/assignment/:id" component={AssignmentSummary} />

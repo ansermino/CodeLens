@@ -78,17 +78,18 @@ router.get('/submissions/:id', function(req, res) {
 
 router.get('/diff/:assignment_id/:submission_a/:submission_b', function(req, res) {
 	// Find the similar lines and files of submission a and submission b.
-	Results.findAll({
+	Results.find({
 		where: {
 			assignment_id: req.params.assignment_id,
 			submission_a: req.params.submission_a,
 			submission_b: req.params.submission_b,
 		},
-		attributes: ['lines_1', 'lines_2', 'file_1', 'file_2']
+		attributes: ['id', 'submission_a', 'submission_b', 'assignment_id', 'plagiarism_score', 'lines_1', 'lines_2', 'text_1', 'text_2'],
+		raw: true,
 	}).then(diff_info => {
 		res.json(diff_info);
 	});
 
-}
+});
 
 module.exports = router;

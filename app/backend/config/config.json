@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "csc301",
-    "password": "team01",
+    "password": "",
     "database": "plagiarism",
     "host": "127.0.0.1",
     "port": "5432",
