@@ -19,7 +19,8 @@ const style = {
     margin: "1rem"
   },
   studentID:{
-    margin: "auto"
+    margin: "auto",
+    padding: "0.25rem"
   },
   dropdown: {
     width: "100%"
@@ -37,30 +38,23 @@ const style = {
 const sampleA = "\ndef merge(left, right):\n\tif not len(left) or not len(right):\n\t\treturn left or right\n\n\tresult = []\n\ti, j = 0, 0\n\twhile (len(result) < len(left) + len(right)):\n\t\tif left[i] < right[j]:\n\t\t\tresult.append(left[i])\n\t\t\ti+= 1\n\t\telse:\n\t\t\tresult.append(right[j])\n\t\t\tj+= 1\n\t\tif i == len(left) or j == len(right):\n\t\t\tresult.extend(left[i:] or right[j:])\n\t\t\tbreak \n\n\treturn result\n\ndef mergesort(list):\n\tif len(list) < 2:\n\t\treturn list\n\n\tmiddle = len(list)\/2\n\tleft = mergesort(list[:middle])\n\tright = mergesort(list[middle:])\n\nreturn merge(left, right)"
 const sampleB = "\ndef merge(left, right):\n\tif not len(left) or not len(right):\n\t\treturn left or right\n\n\tresult = []\n\ti, j = 0, 0\n\twhile (len(result) < len(left) + len(right)):\n\t\tif left[i] < right[j]:\n\t\t\tresult.append(left[i])\n\t\t\ti+= 1\n\t\telse:\n\t\t\tresult.append(right[j])\n\t\t\tj+= 1\n\t\tif i == len(left) or j == len(right):\n\t\t\tresult.extend(left[i:] or right[j:])\n\t\t\tbreak \n\n\treturn result\n\ndef mergesort(list):\n\tif len(list) < 2:\n\t\treturn list\n\n\tmiddle = len(list)\/2\n\tleft = mergesort(list[:middle])\n\tright = mergesort(list[middle:])\n\nreturn merge(left, right)"
 
-const showDiff = (codeA, codeB) => {
-  var linesA = codeA.split("\n")
-  var linesB = codeB.split("\n")
-  var resultA = "", resultB = ""
-  var diff = SimpleDiff.diff(codeA, codeB)
+const createDiff = (code, lines) => {
+  lines = lines.reverse()
+  var codeSplit = code.split('\n')
+  var nextLine= lines.pop();
 
-  // Call diff on each line
-  // Check if any elems are not '=' => colour those lines
-
-  for(var i = 0; i < diff.length; i++){
-    if(diff[i][0] == "+"){
-      resultB += '# ' + diff[i][1]
-    }
-    else if(diff[i][0] == "-"){
-      resultA += '# ' + diff[i][1]
+  for(var i = 0; i < codeSplit.length; i++){
+    if((i + 1) != nextLine){
+      console.log((i + 1) + ' != ' + nextLine )
+      codeSplit[i] = '#' + codeSplit[i]
     }
     else{
-      resultA += diff[i][1] + "\n"
-      resultB += diff[i][1] + "\n"
+      nextLine = lines.pop()
+      console.log(nextLine)
     }
   }
 
-  console.log(resultB)
-  return md.render(resultB);
+  return codeSplit.join('\n');
 }
 
 class DiffView extends React.Component{
@@ -83,12 +77,12 @@ class DiffView extends React.Component{
           </DropDownMenu>
           <Paper style={style.paper}>
             <h3 style={style.studentID}>1000889247</h3>
-            <SyntaxHighlighter language='python' style={docco}>{sampleA}</SyntaxHighlighter>
+            <SyntaxHighlighter language='python' style={docco} showLineNumbers="true">{createDiff(sampleA, [1,3,5])}</SyntaxHighlighter>
           </Paper>
 
           <Paper style={style.paper}>
             <h3 style={style.studentID}>1000265789</h3>
-            <SyntaxHighlighter language='python' style={docco}>{sampleB}</SyntaxHighlighter>
+            <SyntaxHighlighter language='python' style={docco} showLineNumbers="true">{createDiff(sampleB, [1,5,9,11,15])}</SyntaxHighlighter>
           </Paper>
         </div>
         <div></div>
