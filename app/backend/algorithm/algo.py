@@ -55,8 +55,10 @@ class RemoveFuncNames(ast.NodeVisitor):
         self.generic_visit(node)
 
     def visit_Name(self, node):
-        if (node.id in self._args) or (node.id in self._funcList):
+        if node.id in self._args:
             node.id = VAR_NAME
+        if node.id in self._funcList:
+            node.id = FUNCTION_NAME
         self.generic_visit(node)
 
     def visit_Assign(self, node):
@@ -222,14 +224,14 @@ def influence(list1, list2, starter, weight):
     Calculate the ammount of similarity given the weight.
     Returns the influence that will be added to the total similarity score.
     """
-    
     if (len(list1) + len(list2)) == 0:
         return 0
+
     starter = [x[0] for x in starter]
     list1clean = [x[0] for x in list1 if x[0] not in starter]
     list2clean = [x[0] for x in list2 if x[0] not in starter]
     if (len(list1clean) + len(list2clean)) == 0:
-        raise Exception("One of the files contains only starter code")
+        return 1
 
     diff = list(set(list1clean).symmetric_difference(set(list2clean)))
     lines1 = [x[1] for x in list1 if x[0] not in diff]
