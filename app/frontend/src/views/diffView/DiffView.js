@@ -1,11 +1,8 @@
 import React from 'react'
-import SimpleDiff from 'simplediff'
-import Remarkable from 'remarkable'
 import { Paper, DropDownMenu, MenuItem } from 'material-ui'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/src/styles/hljs';
 
-var md = new Remarkable()
 
 const style = {
   rootDiv : {
@@ -44,7 +41,7 @@ const createDiff = (code, lines) => {
   var nextLine= lines.pop();
 
   for(var i = 0; i < codeSplit.length; i++){
-    if((i + 1) != nextLine){
+    if((i + 1) !== nextLine){
       console.log((i + 1) + ' != ' + nextLine )
       codeSplit[i] = '#' + codeSplit[i]
     }

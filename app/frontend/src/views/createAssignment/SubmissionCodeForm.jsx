@@ -1,6 +1,5 @@
 import React from 'react'
 import { Paper, RaisedButton } from 'material-ui'
-import { Link } from 'react-router-dom'
 
 const style = {
   paper:{
