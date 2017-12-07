@@ -25,7 +25,7 @@ class AssignmentBar extends React.Component{
         title={<span style={style.title}>{this.props.title}</span>}
         onTitleTouchTap={null}
         iconElementLeft={<IconButton><NavigationClose /></IconButton>}
-        iconElementRight={<Link to="/assignment"><FlatButton style={style.viewButton} label="View" /></Link>}
+        iconElementRight={<Link to={"/assignment/" + this.props.assignment_id }><FlatButton style={style.viewButton} label="View" /></Link>}
         style={style.barStyle}
       />
     )
