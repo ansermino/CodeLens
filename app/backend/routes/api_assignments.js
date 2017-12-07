@@ -54,7 +54,7 @@ router.post('/create', assignmentFiles, function (req, res, next) {
     starter_hash: req.files['starter'][0].filename,
     instructor_id: 2
   }).then((assignment) => {
-    util.initPlagiarismChecks(req.files['assignments'][0].filename, req.files['starter'][0].filename);
+    util.initPlagiarismChecks(req.files['assignments'][0].filename, req.files['starter'][0].filename, assignment.id);
     res.json({id: assignment.id});
   }, (error) => {
   	console.log(error);
