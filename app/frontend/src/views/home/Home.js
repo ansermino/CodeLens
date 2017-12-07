@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const style = {
   rootDiv: {
@@ -58,9 +59,6 @@ const style = {
 }
 
 class Home extends React.Component{
-
-  
-  
   render(){
     return(
       <div>
@@ -73,7 +71,7 @@ class Home extends React.Component{
           <div style={style.registerContainer}>
             <input autocomplete="off" placeholder="Email Address" className="registerInput"></input>
             <input autocomplete="off" placeholder="Password" type="password" className="registerInput"></input>
-            <input className="registerButton" value="Register" type="button"/>
+            <Link to="/user-landing"><input className="registerButton" value="Register" type="button"/></Link>
           </div>
         </div>
       </div>
