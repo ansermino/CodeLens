@@ -31,7 +31,7 @@ def run_algo_on_dirs(dir1: str, dir2: str, assignment_id: int, starter: str = No
         sys.exit()
 
     # Connect to the db
-    conn = psycopg2.connect("dbname=plagiarism user=igor password=testpass")
+    conn = psycopg2.connect("dbname=plagiarism user=csc301 password=team01")
     cur = conn.cursor()
     plag = ()
 

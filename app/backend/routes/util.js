@@ -14,13 +14,13 @@ function isLoggedIn(req, res, next) {
   }
 }
 
-function initPlagiarismChecks(submissions, starterCode) {
+function initPlagiarismChecks(submissions, starterCode, assignmentId) {
 
   const base = "local/assignments/";
 
   const opts = {
     pythonPath: 'python3',
-    args: [base + submissions, base + starterCode]
+    args: [base + submissions, base + starterCode, assignmentId]
   };
 
   PythonShell.run('algorithm/main.py', opts, (err, results) => {
