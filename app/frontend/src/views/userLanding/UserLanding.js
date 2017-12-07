@@ -12,6 +12,15 @@ const rootDivStyle = {
 const addAssignmentStyle = {
     float: "left",
     margin: "3rem"
+
+}
+
+const style = {
+  message: {
+    textAlign: "center",
+    paddingTop: "2rem",
+        fontSize: "2rem"
+  }
 }
 
 const getAssignments = () => new Promise((resolves, rejects) => {
@@ -40,21 +49,37 @@ class UserLanding extends React.Component{
     })
   }
   render(){
-    return(
-      <div style={rootDivStyle}>
-        <div>
-        </div>
-        <div>
-          <h2>Assignments</h2>
-          {this.state.assignments.map((item, n) => <AssignmentBar key={ n } title={item.title} assignment_id={item.id}/>)}
-        </div>
-        <div>
-        <Link to="/create/name"><FloatingActionButton style={addAssignmentStyle}>
-        <ContentAdd />
-        </FloatingActionButton></Link>
-        </div>
-      </div>
-    )
+      if(this.state.assignments.length === 0){
+        return (
+        <div style={rootDivStyle}>
+          <div>
+          </div>
+          <div>
+            <h2>Assignments</h2>
+            <p style={style.message}> Click on the + to create a new assignment.</p>
+          </div>
+          <div>
+          <Link to="/create/name"><FloatingActionButton style={addAssignmentStyle}>
+          <ContentAdd />
+          </FloatingActionButton></Link>
+          </div>
+        </div>)
+      }
+      else{
+        return (<div style={rootDivStyle}>
+          <div>
+          </div>
+          <div>
+            <h2>Assignments</h2>
+            {this.state.assignments.map((item, n) => <AssignmentBar key={ n } title={item.title} assignment_id={item.id}/>)}
+          </div>
+          <div>
+          <Link to="/create/name"><FloatingActionButton style={addAssignmentStyle}>
+          <ContentAdd />
+          </FloatingActionButton></Link>
+          </div>
+        </div>)
+      }
   }
 }
 
