@@ -231,7 +231,7 @@ def influence(list1, list2, starter, weight):
     list1clean = [x[0] for x in list1 if x[0] not in starter]
     list2clean = [x[0] for x in list2 if x[0] not in starter]
     if (len(list1clean) + len(list2clean)) == 0:
-        return 1
+        return 0
 
     diff = list(set(list1clean).symmetric_difference(set(list2clean)))
     lines1 = [x[1] for x in list1 if x[0] not in diff]

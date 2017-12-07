@@ -46,15 +46,20 @@ def run_algo_on_dirs(dir1: str, dir2: str, assignment_id: int, starter: str = No
         dir1_file_path = "./" + dir1 + "/" + dir1_files[x]
         dir2_file_path = "./" + dir2 + "/" + dir2_files[x]
 
+        file1_content = open(dir1_file_path, 'r').readlines()
+        file2_content = open(dir2_file_path, 'r').readlines()
+        file1_content = " ".join(file1_content)
+        file2_content = " ".join(file2_content)
+
         id1 = os.path.basename(os.path.normpath(dir1))
         id2 = os.path.basename(os.path.normpath(dir2))
         plag = start_algo(dir1_file_path, dir2_file_path, starter_file_path)
         cur.execute("""INSERT INTO public.plagiarism_tuples (submission_a, submission_b,
-                    plagiarism_score, assignment_id, lines_1, lines_2, \"createdAt\", \"updatedAt\")
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s);
+                    plagiarism_score, assignment_id, lines_1, lines_2, text_1, text_2, \"createdAt\", \"updatedAt\")
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
                     """,
                     (id1, id2, plag[0] * 100, assignment_id, plag[1], plag[2],
-                     "NOW()", "NOW()"))
+                     file1_content, file2_content, "NOW()", "NOW()"))
 
     conn.commit()
     cur.close()
