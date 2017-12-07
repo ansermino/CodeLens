@@ -47,10 +47,10 @@ const showDiff = (codeA, codeB) => {
   // Check if any elems are not '=' => colour those lines
 
   for(var i = 0; i < diff.length; i++){
-    if(diff[i][0] === "+"){
+    if(diff[i][0] == "+"){
       resultB += '# ' + diff[i][1]
     }
-    else if(diff[i][0] === "-"){
+    else if(diff[i][0] == "-"){
       resultA += '# ' + diff[i][1]
     }
     else{

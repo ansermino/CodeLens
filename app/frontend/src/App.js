@@ -19,7 +19,7 @@ class App extends Component {
             <Route exact path="/diff" component={DiffView}/>
             <Route exact path="/user-landing" component={UserLanding}/>
             {/* TODO: Remove these, purely for easy testing */}
-            <Route exact path="/assignment" component={AssignmentSummary} />
+            <Route path="/assignment/:id" component={AssignmentSummary} />
 
             <Route exact path="/" component={Home}/>
           </Switch>

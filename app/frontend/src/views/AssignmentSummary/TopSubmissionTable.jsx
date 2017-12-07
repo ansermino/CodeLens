@@ -25,8 +25,8 @@ const sampleData = [
 ]
 
 
-const getPlagiarismInfo = () => new Promise((resolves, rejects) => {
-  const url = process.env.REACT_APP_BASE_URL + '/api/assignments/11/results'
+const getPlagiarismInfo = (assignment_id) => new Promise((resolves, rejects) => {
+  const url = process.env.REACT_APP_BASE_URL + '/api/assignments/' + assignment_id + '/results'
   console.log(url)
   const request = new XMLHttpRequest()
   request.open('GET', url)
@@ -41,7 +41,7 @@ class TopSubmissionTable extends React.Component{
     this.state = {assignments: []}
   }
   componentDidMount(){
-    getPlagiarismInfo().then((data)=>{
+    getPlagiarismInfo(this.props.assignment_id).then((data)=>{
       console.log(data)
       this.setState({assignments: data})
       this.render()

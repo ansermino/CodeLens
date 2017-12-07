@@ -25,7 +25,7 @@ class AssignmentSummary extends React.Component{
           <h2 style={style.assignmentName}>Assignment View</h2>
           <Paper style={style.paper}>
             <h3>Submissions with Highest Similarity</h3>
-            <TopSubmissionTable />
+            <TopSubmissionTable assignment_id={ this.props.match.params.id }/>
           </Paper>
         </div>
         <div></div>

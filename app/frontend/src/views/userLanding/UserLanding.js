@@ -46,7 +46,7 @@ class UserLanding extends React.Component{
         </div>
         <div>
           <h2>Assignments</h2>
-          {this.state.assignments.map((item, n) => <AssignmentBar title={item.title} />)}
+          {this.state.assignments.map((item, n) => <AssignmentBar key={ n } title={item.title} />)}
         </div>
         <div>
         <Link to="/create/name"><FloatingActionButton style={addAssignmentStyle}>
