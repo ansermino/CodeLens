@@ -45,13 +45,10 @@ class SubmissionCodeForm extends React.Component{
             <input type="file" accept=".zip" onChange={this.handleChange}/>
           </div>
           <div>
-            <RaisedButton label="next" onClick={this.props.completeForm}/>
+            <div style={style.nextButton}><RaisedButton label="next" onClick={this.props.completeForm}/></div>
           </div>
-
         </Paper>
-
       </div>
-
     )
   }
 }

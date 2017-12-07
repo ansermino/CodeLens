@@ -17,12 +17,12 @@ const style = {
 }
 
 class AssignmentSummary extends React.Component{
-render(){
+  render(){
     return(
       <div style={style.rootDiv}>
         <div></div>
         <div>
-          <h2 style={style.assignmentName}>CSC369 Assignment 1</h2>
+          <h2 style={style.assignmentName}>Assignment View</h2>
           <Paper style={style.paper}>
             <h3>Submissions with Highest Similarity</h3>
             <TopSubmissionTable />

@@ -19,7 +19,7 @@ router.get('/:id/results', function(req, res) {
 		where: {
 			assignment_id: req.params.id,
 		},
-		attributes: ['submission_a', 'submission_b', 'plagiarism_score']
+		attributes: ['id', 'submission_a', 'submission_b', 'plagiarism_score']
 	}).then(results => {
     let compare = function(a,b) {
 			if (a.plagiarism_score < b.plagiarism_score)

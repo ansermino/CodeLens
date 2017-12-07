@@ -9,6 +9,7 @@ const style = {
     height: "100%",
     verticalAlign: "100%",
     fontWeight: "thin",
+    marginTop: "25px",
   }
 }
 

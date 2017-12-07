@@ -47,11 +47,8 @@ class StarterCodeForm extends React.Component{
           <div>
             <Link style={style.nextButton} to="/create/submissions"><RaisedButton label="next"/></Link>
           </div>
-
         </Paper>
-
       </div>
-
     )
   }
 }
