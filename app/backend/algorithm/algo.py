@@ -216,6 +216,7 @@ def flatten(x):
     else:
         return [x]
 
+
 def influence(list1, list2, starter, weight):
     """
     Calculate the ammount of similarity given the weight.
@@ -227,6 +228,8 @@ def influence(list1, list2, starter, weight):
     starter = [x[0] for x in starter]
     list1clean = [x[0] for x in list1 if x[0] not in starter]
     list2clean = [x[0] for x in list2 if x[0] not in starter]
+    if (len(list1clean) + len(list2clean)) == 0:
+        raise Exception("One of the files contains only starter code")
 
     diff = list(set(list1clean).symmetric_difference(set(list2clean)))
     lines1 = [x[1] for x in list1 if x[0] not in diff]
